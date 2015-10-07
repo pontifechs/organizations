@@ -45,7 +45,8 @@ $coralURL = $util->getCORALURL();
 <link rel="stylesheet" href="css/datePicker.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.autocomplete.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.tooltip.css" type="text/css" media="screen" />
-<link rel="SHORTCUT ICON" href="images/turtlefavicon.ico" />
+<link rel="SHORTCUT ICON" href="images/favicon.ico" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript" src="js/plugins/jquery.js"></script>
 <script type="text/javascript" src="js/plugins/ajaxupload.3.5.js"></script>
 <script type="text/javascript" src="js/plugins/thickbox.js"></script>
@@ -66,7 +67,7 @@ $coralURL = $util->getCORALURL();
 <div style="text-align:left;">
 
 <center>
-<table class="titleTable" style="background-image:url('images/organizationstitle.gif');background-repeat:no-repeat;width:900px;text-align:left;">
+<table class="titleTable" style="background-image:url('images/organizationstitle.jpg');background-repeat:no-repeat;width:900px;text-align:left;">
 <tr style='vertical-align:top;'>
 <td style='height:53px;'>
 &nbsp;
@@ -85,7 +86,7 @@ $coralURL = $util->getCORALURL();
 
 ?>
 </span>
-<br /><?php if($config->settings->authModule == 'Y'){ echo "<a href='" . $coralURL . "auth/?logout'>logout</a>"; } ?>
+<br /><?php if($config->settings->authModule == 'Y'){ echo "<a href='" . $coralURL . "auth/?logout' id='logout'>logout</a>"; } ?>
 </div>
 </td>
 </tr>
@@ -116,27 +117,27 @@ if ((file_exists($util->getCORALPath() . "index.php")) || ($config->settings->li
 		<li style="background: url('images/change/coral-change.gif') no-repeat right;">&nbsp;
 			<ul class="coraldropdown">
 				<?php if (file_exists($util->getCORALPath() . "index.php")) {?>
-				<li><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/coral-main.gif'></a></li>
+				<li><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/coral-main.png'></a></li>
 				<?php
 				}
 				if ($config->settings->licensingModule == 'Y') {
 				?>
-				<li><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/coral-licensing.gif'></a></li>
+				<li><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/coral-licensing.png'></a></li>
 				<?php
 				}
 				if ($config->settings->resourcesModule == 'Y') {
 				?>
-				<li><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/coral-resources.gif'></a></li>
+				<li><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/coral-resources.png'></a></li>
 				<?php
 				}
 				if ($config->settings->cancellationModule == 'Y') {
 				?>
-				<li><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/coral-cancellation.gif'></a></li>
+				<li><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/coral-cancellation.png'></a></li>
 				<?php
 				}
 				if ($config->settings->usageModule == 'Y') {
 				?>
-				<li><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/coral-usage.gif'></a></li>
+				<li><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/coral-usage.png'></a></li>
 				<?php } ?>
 			</ul>
 		</li>

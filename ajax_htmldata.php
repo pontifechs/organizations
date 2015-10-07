@@ -83,9 +83,9 @@ switch ($_GET['action']) {
 		?>
 		<table class='linedFormTable' style='width:440px;'>
 		<tr>
-		<th colspan='2' style='height:30px; margin-top: 7px; margin-bottom: 5px; vertical-align:middle'>
+		<th colspan='2'>
 
-			<span style='float:left; font-size:115%; max-width:400px;'>&nbsp;<?php echo $organization->name; ?></span>
+			<span style='float:left; max-width:400px;'>&nbsp;<?php echo $organization->name; ?></span>
 			<span style='float:right; vertical-align:top;'><?php if ($user->canEdit()){ ?><a href='ajax_forms.php?action=getOrganizationForm&height=363&width=345&modal=true&organizationID=<?php echo $organizationID; ?>' class='thickbox' id='editOrganization'><img src='images/edit.gif' alt='edit' title='edit resource'></a><?php } ?>  <?php if ($user->isAdmin){ ?><a href='javascript:removeOrganization(<?php echo $organizationID; ?>);'><img src='images/cross.gif' alt='remove resource' title='remove resource'></a><?php } ?></span>
 		</th>
 		</tr>
@@ -158,7 +158,7 @@ switch ($_GET['action']) {
 		</table>
 
 
-		<br /><br />
+		br />
 		<i>Created:
 		<?php
 			echo format_date($organization->createDate);
@@ -724,14 +724,15 @@ switch ($_GET['action']) {
 			$i=0;
 		}else{
 			$thisPageNum = count($organizationArray) + $pageStart - 1;
-			echo "<span style='font-weight:bold;'>Displaying " . $pageStart . " to " . $thisPageNum . " of " . $totalRecords . " Organization Records</span><br />";
+			echo "<span style='font-weight:bold;'>Displaying " . $pageStart . " to " . $thisPageNum . " of " . $totalRecords . " Organization Records</span>";
 
 			//print out page selectors
 			if ($totalRecords > $numberOfRecords){
+ 				echo "<div id='pagination-div'>";
 				if ($pageStart == "1"){
-					echo "<span class='smallerText'><<</span>&nbsp;";
+					echo "<span class='smallerText'><i class='fa fa-backward'></i></span>&nbsp;";
 				}else{
-					echo "<a href='javascript:setPageStart(1);' class='smallLink'><<</a>&nbsp;";
+					echo "<a href='javascript:setPageStart(1);' class='smallLink'><i class='fa fa-backward'></i></a>&nbsp;";
 				}
 
 				//don't want to print out too many page selectors!!
@@ -754,12 +755,13 @@ switch ($_GET['action']) {
 				}
 
 				if ($pageStart == $nextPageStarts){
-					echo "<span class='smallerText'>>></span>&nbsp;";
+					echo "<span class='smallerText'><i class='fa fa-forward'></i></span>&nbsp;";
 				}else{
-					echo "<a href='javascript:setPageStart(" . $nextPageStarts  .");' class='smallLink'>>></a>&nbsp;";
+					echo "<a href='javascript:setPageStart(" . $nextPageStarts  .");' class='smallLink'><i class='fa fa-forward'></i></a>&nbsp;";
 				}
+				echo "</div>";
 			}else{
-				echo "<br />";
+				echo "<div id='pagination-div'></div>";
 			}
 
 
@@ -774,10 +776,10 @@ switch ($_GET['action']) {
 				<th><table class='noBorderTable'><tr><td>Organization Role(s)</td><td class='arrow'><a href='javascript:setOrder("orgRoles","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("orgRoles","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
 
 			<?php } else{ ?>
-				<th><table class='noBorderTable'><tr><td>Organization Name</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Alias</td><td class='arrow'><a href='javascript:setOrder("Aliases","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("Aliases","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Parent Organization</td><td class='arrow'><a href='javascript:setOrder("OP.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("OP.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Role(s)</td><td class='arrow'><a href='javascript:setOrder("orgRoles","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("orgRoles","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
+				<th><table class='noBorderTable'><tr><td>Organization Name</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+				<th><table class='noBorderTable'><tr><td>Alias</td><td class='arrow'><a href='javascript:setOrder("Aliases","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("Aliases","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+				<th><table class='noBorderTable'><tr><td>Parent Organization</td><td class='arrow'><a href='javascript:setOrder("OP.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("OP.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+				<th><table class='noBorderTable'><tr><td>Role(s)</td><td class='arrow'><a href='javascript:setOrder("orgRoles","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("orgRoles","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
 			<?php } ?>
 			</tr>
 
@@ -821,9 +823,9 @@ switch ($_GET['action']) {
 			//print out page selectors
 			if ($totalRecords > $numberOfRecords){
 				if ($pageStart == "1"){
-					echo "<span class='smallerText'><<</span>&nbsp;";
+					echo "<span class='smallerText'><i class='fa fa-backward'></i></span>&nbsp;";
 				}else{
-					echo "<a href='javascript:setPageStart(1);' class='smallLink'><<</a>&nbsp;";
+					echo "<a href='javascript:setPageStart(1);' class='smallLink'><i class='fa fa-backward'></i></a>&nbsp;";
 				}
 
 				$maxDisplay=41;
@@ -845,14 +847,16 @@ switch ($_GET['action']) {
 				}
 
 				if ($pageStart == $nextPageStarts){
-					echo "<span class='smallerText'>>></span>&nbsp;";
+					echo "<span class='smallerText'><i class='fa fa-forward'></i></span>&nbsp;";
 				}else{
-					echo "<a href='javascript:setPageStart(" . $nextPageStarts  .");' class='smallLink'>>></a>&nbsp;";
+					echo "<a href='javascript:setPageStart(" . $nextPageStarts  .");' class='smallLink'><i class='fa fa-forward'></i></a>&nbsp;";
 				}
 			}
 			?>
 			</td>
-			<td style="text-align:right">
+			</tr>
+			<tr>
+			<td style="text-align:left;padding-top:10px;">
 			<select id='numberOfRecords' name='numberOfRecords' onchange='javascript:setNumberOfRecords();' style='width:50px;'>
 				<?php
 				for ($i=5; $i<=50; $i=$i+5){

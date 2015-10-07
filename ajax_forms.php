@@ -62,15 +62,15 @@ switch ($_GET['action']) {
 		<form id='organizationForm'>
 		<input type='hidden' name='editOrganizationID' id='editOrganizationID' value='<?php echo $organizationID; ?>'>
 
-		<table class="thickboxTable" style="background-image:url('images/title.gif');background-repeat:no-repeat;width:340px;">
+		<table class="thickboxTable" style="width:100%;">
 		<tr>
-		<td colspan='2'><span class='headerText'><?php if ($organizationID != "") { echo "Update Organization"; }else{ echo "Add New Organization"; } ?></span>
+		<td colspan='2' id='org-title'><span class='headerText'><?php if ($organizationID != "") { echo "Update Organization"; }else{ echo "Add New Organization"; } ?></span>
 		<br /></td>
 		</tr>
 
 		<tr>
-		<td style='vertical-align:top;text-align:right;'><label for='organizationName'><b>Name:</b></label></td>
-		<td><input type='text' id='organizationName' name='organizationName' value = "<?php echo htmlentities($organization->name); ?>" style='width:220px;' /><span id='span_errors' style='color:red'></span></td>
+		<td style='vertical-align:top;text-align:right;padding-top:10px;'><label for='organizationName'><b>Name:</b></label></td>
+		<td style='vertical-align:top;padding-top:10px;'><input type='text' id='organizationName' name='organizationName' value = "<?php echo htmlentities($organization->name); ?>" style='width:220px;' /><span id='span_errors' style='color:red'></span></td>
 		</tr>
 
 		<?php if (count($parentOrganizationArray) > 0){ ?>
@@ -151,8 +151,8 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;text-align:left;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left'><input type='button' value='submit' name='submitOrganizationChanges' id ='submitOrganizationChanges'></td>
-					<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove()"></td>
+					<td style='text-align:left;float:left;'><input type='button' value='submit' name='submitOrganizationChanges' id ='submitOrganizationChanges'></td>
+					<td style='text-align:left;margin-left:6px;float:left;'><input type='button' value='cancel' onclick="tb_remove()"></td>
 				</tr>
 			</table>
 		</td>

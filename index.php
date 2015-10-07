@@ -42,7 +42,7 @@ $_SESSION['ref_script']=$currentPage;
 <table class="headerTable" style="background-image:url('images/header.gif');background-repeat:no-repeat;">
 <tr style='vertical-align:top;'>
 <td style="width:155px;padding-right:10px;">
-	<table class='noBorder'>
+	<table class='noBorder' id='title-search'>
 	<tr><td style='text-align:left;width:75px;' align='left'>
 	<span style='font-size:130%;font-weight:bold;'>Search</span><br />
 	<a href='javascript:void(0)' class='newSearch'>new search</a>
