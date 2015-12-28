@@ -67,7 +67,7 @@ $coralURL = $util->getCORALURL();
 <div style="text-align:left;">
 
 <center>
-<table class="titleTable" style="background-image:url('images/organizationstitle.jpg');background-repeat:no-repeat;width:900px;text-align:left;">
+<table class="titleTable" style="background-image:url('images/organizationstitle.jpg');background-repeat:no-repeat;width:1024px;text-align:left;">
 <tr style='vertical-align:top;'>
 <td style='height:53px;'>
 &nbsp;
@@ -95,11 +95,29 @@ $coralURL = $util->getCORALURL();
 <td style='width:870px;height:19px;'>
 
 <?php if ($user->isAdmin()){ ?>
-<a href='index.php'><img src="images/menu/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/menu-home-over.gif" class="rollover" /></a><img src='images/menu/menu-bar.gif'><a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/menu-neworganization.gif' hover="images/menu/menu-neworganization-over.gif" class="rollover"></a><img src='images/menu/menu-bar.gif'><a href='admin.php'><img src='images/menu/menu-admin<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-admin-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
+<a href='index.php'><img src="images/menu/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/menu-home-over.gif" class="rollover" /></a>
+
+<img src='images/menu/menu-bar.gif'>
+
+<a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/menu-neworganization.gif' hover="images/menu/menu-neworganization-over.gif" class="rollover"></a>
+
+<img src='images/menu/menu-bar.gif'>
+
+<a href='admin.php'><img src='images/menu/menu-admin<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-admin-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
 <?php }else if ($user->canEdit()){?>
-<a href='index.php'><img src="images/menu/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/menu-home-over.gif" class="rollover" /></a><img src='images/menu/menu-bar.gif'><a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/menu-neworganization.gif' hover="images/menu/menu-neworganization-over.gif" class="rollover" id="menu-last" /></a><img src='images/menu/menu-end.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
+<a href='index.php'><img src="images/menu/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/menu-home-over.gif" class="rollover" /></a>
+
+<img src='images/menu/menu-bar.gif'>
+
+<a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/menu-neworganization.gif' hover="images/menu/menu-neworganization-over.gif" class="rollover" id="menu-last" /></a><img src='images/menu/menu-end.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
 <?php }else{ ?>
-<a href='index.php'><img src="images/menu/menu-home.gif" hover="images/menu/menu-home-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
+<a href='index.php'><img src="images/menu/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/menu-home-over.gif" class="rollover" /></a><img src='images/menu/menu-bar.gif'><a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/menu-neworganization.gif' hover="images/menu/menu-neworganization-over.gif" class="rollover"></a><img src='images/menu/menu-bar.gif'><a href='admin.php'><img src='images/menu/menu-admin<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-admin-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+
 <?php } ?>
 </td>
 
@@ -112,36 +130,41 @@ if ((file_exists($util->getCORALPath() . "index.php")) || ($config->settings->li
 
 	?>
 
-	<div style='text-align:left;'>
-		<ul class="tabs">
-		<li style="background: url('images/change/coral-change.gif') no-repeat right;">&nbsp;
-			<ul class="coraldropdown">
-				<?php if (file_exists($util->getCORALPath() . "index.php")) {?>
-				<li><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/coral-main.png'></a></li>
-				<?php
-				}
-				if ($config->settings->licensingModule == 'Y') {
-				?>
-				<li><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/coral-licensing.png'></a></li>
-				<?php
-				}
-				if ($config->settings->resourcesModule == 'Y') {
-				?>
-				<li><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/coral-resources.png'></a></li>
-				<?php
-				}
-				if ($config->settings->cancellationModule == 'Y') {
-				?>
-				<li><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/coral-cancellation.png'></a></li>
-				<?php
-				}
-				if ($config->settings->usageModule == 'Y') {
-				?>
-				<li><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/coral-usage.png'></a></li>
-				<?php } ?>
-			</ul>
-		</li>
-		</ul>
+			<div style='text-align:left;'>
+					<ul class="tabs">
+					<li style="background: url('images/change/coral-change.gif') no-repeat right;">&nbsp;
+								<ul class="coraldropdown">
+										<?php if (file_exists($util->getCORALPath() . "index.php")) {?>
+										<li><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/coral-main.png'></a></li>
+										<?php
+										}
+										if ($config->settings->licensingModule == 'Y') {
+										?>
+										<li><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/coral-licensing.png'></a></li>
+										<?php
+										}
+										if ($config->settings->resourcesModule == 'Y') {
+										?>
+										<li><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/coral-resources.png'></a></li>
+										<?php
+										}
+										if ($config->settings->cancellationModule == 'Y') {
+										?>
+										<li><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/coral-cancellation.png'></a></li>
+										<?php
+										}
+										if ($config->settings->usageModule == 'Y') {
+										?>
+										<li><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/coral-usage.png'></a></li>
+										<?php
+										}
+										if ($config->settings->managementModule == 'Y') {
+										?>
+										<li><a href="<?php echo $coralURL; ?>management/" target='_blank'><img src='images/change/coral-management.png'></a></li>
+										<?php } ?>
+								</ul>
+					</li>
+					</ul>
 
 	</div>
 	<?php

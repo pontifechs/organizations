@@ -40,24 +40,32 @@ width:100%;
 position: absolute;
 } 
 
-
-
 a {color:#4d4d4d;}
 a:active {color:#94a9be;}
 a:focus {color:#94a9be; outline: none; -moz-outline-style: none;}
+
+
+a.bigLink {font-size:103%; }
+
+span.smallText {
+ color:#3D545D;
+ font-size:92%;
+}
+
+span.smallerText {
+	color:#1B77AA;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+span.redText{color:red}
+span.normalText{color:#3D545D}
 
 a.smallLink {
  font-size: 12px;
  text-decoration: none;
  color: #1B76A9;
 }
-
-a.bigLink {font-size:103%; }
-
-span.smallText{color:#3D545D;font-size:92%;}
-span.smallerText{color:#3D545D;font-size:85%;}
-span.redText{color:red}
-span.normalText{color:#3D545D}
 
 span.smallGreyText {
  font-size: 85%;
@@ -84,7 +92,7 @@ table#title {
 
 table.headerTable {
  padding: 1px;
- width: 900px;
+ width: 1024px;
  min-height:40px;
  background: none !important;
  border-collapse: collapse;
@@ -237,8 +245,8 @@ table.dataTable {
 	border-color: #e0dfe3;
 	border-collapse: collapse;
 	border-spacing: 0;
-	max-width:895px;
-	width:895px;
+	max-width:840px;
+	width:840px;
 	font-size:90%;
 	margin-top: 11px;
 	margin-bottom: 10px;
@@ -387,10 +395,8 @@ table.sample td.bottom {
 .sidemenuunselected {
 	padding: 10px;
 	border-bottom: 1px solid #5295ba;
-width: 150px !important;
+	width: 150px !important;
 }
-
-/*-*/
 
 .sidemenuselected a {
      color: #1b77aa !important;
@@ -399,8 +405,6 @@ width: 150px !important;
 .sidemenuselected .link {
      color: #1b77aa !important;
 }
-
-/*-*/
 
 .mainContent{
     background-color: #f9fafb;
@@ -556,7 +560,6 @@ table.borderedHeadTable tr {
 	vertical-align:middle;
 }
 
-
 table.linedFormTable {	
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
@@ -591,7 +594,6 @@ table.linedFormTable th {
 	-moz-border-radius: 0px;
 	background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
 }
-
 
 table.linedFormTable tr {	
 	vertical-align:top;
@@ -630,13 +632,14 @@ table.noMargin td { border:0px;margin:0px; padding:0px; }
 div.thickboxDiv{display:none;}
 
 table.thickboxTable{
- padding:6px;
+ padding: 0;
  text-decoration: none;
  color:  #2c3c42;
  font-family: "arial";
  font-size: 8pt;
  font-weight: heavy;
  background-image: none !important;
+ width: auto !important;
 }
 
 table.thickboxTable td{
@@ -1212,3 +1215,263 @@ div#div_organizationDetails i {
 a.helpfulLink {
      text-decoration: underline !important;
 }
+
+/*---
+#org-name a:before {
+			font-family: FontAwesome;
+			content: "\f0a9";
+			font-size: 11px;
+			margin-right: 5px;
+} ---*/
+
+.titleTable img {
+	float: left;
+}
+	
+.titleTable ul.tabs ul.coraldropdown img {
+	float: none;
+}
+
+/*--- Align Text When No Documents Fit the Query ---*/
+
+div#div_searchResults > i {
+		font-size: 18px;
+		position: relative;
+		top: 20px;
+		left: 20px;
+}
+
+/*--- Capitalize Links ---*/
+
+table.headerTable a {
+		text-transform: capitalize;
+}
+
+/*--- Form Title Bar ---*/
+
+table.thickboxTable .headerText {
+	/*-*/width: auto !important;
+	margin: 0;
+	/*-*/padding: 6px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #e6e5e9;
+	/*-*/background-color: #cad7e1;
+	-moz-border-radius: 0px;
+	background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
+	display: block;
+
+}
+
+/*--- Adjust Add Alias Form Modal Window ---*/
+
+#div_aliasForm input#submitAliasForm {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_aliasForm input#submitAliasForm:hover {
+	cursor: pointer;
+}
+
+#div_aliasForm input[value=cancel] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+	position: relative;
+	left: -70px;
+}
+
+#div_aliasForm input[value=cancel]:hover {
+	cursor: pointer;
+}
+
+/*--- Adjust Add Contact Form Modal Window ---*/
+
+#div_contactForm input#submitContactForm {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_contactForm input#submitContactForm:hover {
+	cursor: pointer;
+}
+
+#div_contactForm input[value=cancel] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+	position: relative;
+	left: -125px;
+}
+
+#div_contactForm input[value=cancel]:hover {
+	cursor: pointer;
+}
+
+/*--- Adjust Add Login Form Modal Window ---*/
+
+#div_organizationForm input#submitExternalLoginForm {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_organizationForm input#submitExternalLoginForm:hover {
+	cursor: pointer;
+}
+
+#div_organizationForm input[value=cancel] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	float: left;
+}
+
+#div_organizationForm input[value=cancel]:hover {
+	cursor: pointer;
+}
+
+/*--- Adjust Add Issue Form Modal Window ---*/
+
+#div_issueForm input#submitIssueLogForm {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_issueForm input#submitIssueLogForm:hover {
+	cursor: pointer;
+}
+
+#div_issueForm input[value=cancel] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+	position: relative;
+	left: -74px;
+}
+
+#div_issueForm input[value=cancel]:hover {
+	cursor: pointer;
+}
+
+/*--- Adjust Add New Organization Form Modal Window ---*/
+
+#div_organizationForm input#submitOrganizationChanges {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_organizationForm input#submitOrganizationChanges:hover {
+	cursor: pointer;
+}
+
+#div_organizationForm input#organizations-cancel {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	position: relative;
+	left: -36px;
+}
+
+#div_organizationForm input#organizations-cancel:hover {
+	cursor: pointer;
+}
+
+/*--- Adjust Update User Form Modal Window ---*/
+
+#div_updateForm input[value=Update] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+
+#div_updateForm input[value=Update]:hover {
+	cursor: pointer;
+}
+
+#div_updateForm input[value=cancel] {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	position: relative;
+	left: -90px;
+}
+
+#div_updateForm input[value=cancel]:hover {
+	cursor: pointer;
+}
+

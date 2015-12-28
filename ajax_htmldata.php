@@ -158,7 +158,7 @@ switch ($_GET['action']) {
 		</table>
 
 
-		br />
+		<br />
 		<i>Created:
 		<?php
 			echo format_date($organization->createDate);
@@ -765,15 +765,15 @@ switch ($_GET['action']) {
 			}
 
 
-			?>
-			<table class='dataTable' style='width:727px'>
-			<tr>
-			<?php if ($_GET['contactName']) { ?>
-				<th><table class='noBorderTable'><tr><td>Contact Name(s)</td><td class='arrow'><a href='javascript:setOrder("C.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("C.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Contact Role(s)</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Organization Name</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Parent Organization</td><td class='arrow'><a href='javascript:setOrder("OP.name","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("OP.name","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
-				<th><table class='noBorderTable'><tr><td>Organization Role(s)</td><td class='arrow'><a href='javascript:setOrder("orgRoles","asc");'><img src='images/arrowup.gif' border=0></a>&nbsp;<a href='javascript:setOrder("orgRoles","desc");'><img src='images/arrowdown.gif' border=0></a></td></tr></table></th>
+								?>
+								<table class='dataTable' style='width:840px'>
+								<tr>
+								<?php if ($_GET['contactName']) { ?>
+										<th><table class='noBorderTable'><tr><td>Contact Name(s)</td><td class='arrow'><a href='javascript:setOrder("C.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("C.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+										<th><table class='noBorderTable'><tr><td>Contact Role(s)</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+										<th><table class='noBorderTable'><tr><td>Organization Name</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+										<th><table class='noBorderTable'><tr><td>Parent Organization</td><td class='arrow'><a href='javascript:setOrder("OP.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("OP.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
+										<th><table class='noBorderTable'><tr><td>Organization Role(s)</td><td class='arrow'><a href='javascript:setOrder("orgRoles","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("orgRoles","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
 
 			<?php } else{ ?>
 				<th><table class='noBorderTable'><tr><td>Organization Name</td><td class='arrow'><a href='javascript:setOrder("O.name","asc");'><img src='images/arrowup.png' border=0></a>&nbsp;<a href='javascript:setOrder("O.name","desc");'><img src='images/arrowdown.png' border=0></a></td></tr></table></th>
