@@ -49,21 +49,21 @@
 }
 
 * html #TB_overlay { /* ie6 hack */
-     position: absolute;
-     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+			position: absolute;
+			height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
 
 #TB_window {
-     position: fixed;
-     background: #ffffff;
-     z-index: 102;
-     color:#000000;
-     display:none;
-     border: 4px solid #525252;
-     text-align:left;
-     top:50%;
-     left:50%;
-     width: auto !important;
+			position: fixed;
+			background: #ffffff;
+			z-index: 102;
+			color:#000000;
+			display:none;
+			border: 4px solid #525252;
+			text-align:left;
+			top:50%;
+			left:50%;
+			width: auto !important;
 }
 
 * html #TB_window { /* ie6 hack */
@@ -161,8 +161,8 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 }
 
 * html #TB_HideSelect { /* ie6 hack */
-     position: absolute;
-     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+			position: absolute;
+			height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
 
 #TB_iframeContent{
@@ -171,4 +171,27 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 	margin-bottom:-1px;
 	margin-top:1px;
 	_margin-bottom:1px;
+}
+
+/*--- Fixes for Login Screen Modal Window ---*/
+
+.TB_modal div#login-form {
+	text-align: center !important;
+	padding-top: 105px;
+	height: 205px !important;
+	width: 452px !important;
+}
+
+.TB_modal span.smallText {
+	float: none !important;
+}
+
+.TB_modal input#remember {
+	height: initial !important;
+	margin-right: 3px !important;
+}
+
+.TB_modal label[for=loginID] {
+	margin-top: 10px !important;
+	display: inline-block;
 }

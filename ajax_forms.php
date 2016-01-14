@@ -24,9 +24,9 @@ include_once 'user.php';
 
 switch ($_GET['action']) {
 
-    case 'getOrganizationForm':
-    	if (isset($_GET['organizationID'])) $organizationID = $_GET['organizationID']; else $organizationID = '';
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getOrganizationForm':
+			if (isset($_GET['organizationID'])) $organizationID = $_GET['organizationID']; else $organizationID = '';
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 		//get parent organizations
 		$sanitizedInstance = array();
@@ -167,15 +167,15 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
 
-    case 'getAliasForm':
-    	$organizationID = $_GET['organizationID'];
-    	if (isset($_GET['aliasID'])) $aliasID = $_GET['aliasID']; else $aliasID = '';
-    	$alias = new Alias(new NamedArguments(array('primaryKey' => $aliasID)));
+		case 'getAliasForm':
+			$organizationID = $_GET['organizationID'];
+			if (isset($_GET['aliasID'])) $aliasID = $_GET['aliasID']; else $aliasID = '';
+			$alias = new Alias(new NamedArguments(array('primaryKey' => $aliasID)));
 
 		//get all alias types for output in drop down
 		$aliasTypeArray = array();
@@ -245,16 +245,16 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
 
 
-    case 'getContactForm':
-    	$organizationID = $_GET['organizationID'];
-    	if (isset($_GET['contactID'])) $contactID = $_GET['contactID']; else $contactID = '';
-    	$contact = new Contact(new NamedArguments(array('primaryKey' => $contactID)));
+		case 'getContactForm':
+			$organizationID = $_GET['organizationID'];
+			if (isset($_GET['contactID'])) $contactID = $_GET['contactID']; else $contactID = '';
+			$contact = new Contact(new NamedArguments(array('primaryKey' => $contactID)));
 
 		if (($contact->archiveDate) && ($contact->archiveDate != '0000-00-00')){
 			$invalidChecked = 'checked';
@@ -409,17 +409,17 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
 
 
 
-    case 'getAccountForm':
-    	$organizationID = $_GET['organizationID'];
-    	if (isset($_GET['externalLoginID'])) $externalLoginID = $_GET['externalLoginID']; else $externalLoginID = '';
-    	$externalLogin = new ExternalLogin(new NamedArguments(array('primaryKey' => $externalLoginID)));
+		case 'getAccountForm':
+			$organizationID = $_GET['organizationID'];
+			if (isset($_GET['externalLoginID'])) $externalLoginID = $_GET['externalLoginID']; else $externalLoginID = '';
+			$externalLogin = new ExternalLogin(new NamedArguments(array('primaryKey' => $externalLoginID)));
 
 
 		//get all contact roles for output in drop down
@@ -514,15 +514,15 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
 
-    case 'getIssueLogForm':
-    	$organizationID = $_GET['organizationID'];
-    	if (isset($_GET['issueLogID'])) $issueLogID = $_GET['issueLogID']; else $issueLogID = '';
-    	$issueLog = new IssueLog(new NamedArguments(array('primaryKey' => $issueLogID)));
+		case 'getIssueLogForm':
+			$organizationID = $_GET['organizationID'];
+			if (isset($_GET['issueLogID'])) $issueLogID = $_GET['issueLogID']; else $issueLogID = '';
+			$issueLog = new IssueLog(new NamedArguments(array('primaryKey' => $issueLogID)));
 
 		if (($issueLog->issueStartDate != '') && ($issueLog->issueStartDate != "0000-00-00")) {
 			$issueStartDate=format_date($issueLog->issueStartDate);
@@ -530,14 +530,14 @@ switch ($_GET['action']) {
 			$issueStartDate='';
 		}
 
-    if (($issueLog->issueEndDate != '') && ($issueLog->issueEndDate != "0000-00-00")) {
+		if (($issueLog->issueEndDate != '') && ($issueLog->issueEndDate != "0000-00-00")) {
 			$issueEndDate=format_date($issueLog->issueEndDate);
 		}else{
 			$issueEndDate='';
 		}
 
-    $issueLogTypeObj = new IssueLogType();
-    $issueLogTypeArray = $issueLogTypeObj->allAsArray();
+		$issueLogTypeObj = new IssueLogType();
+		$issueLogTypeArray = $issueLogTypeObj->allAsArray();
 
 
 		?>
@@ -552,24 +552,24 @@ switch ($_GET['action']) {
 		<span id='span_errors' style='color:red;'></span><br />
 		</td>
 		</tr>
-    <tr>
+		<tr>
 
 		<td style='vertical-align:top;text-align:right;'><label for='issueLogTypeID'><b>Type:</b></label></td>
-    <td>
-      <select name='issueLogTypeID' id='issueLogTypeID'>
-      <option value=''></option>
-      <?php
-      foreach ($issueLogTypeArray as $issueLogType){
-        if (!(trim(strval($issueLogType['issueLogTypeID'])) != trim(strval($issueLog->issueLogTypeID)))){
-          echo "<option value='" . $issueLogType['issueLogTypeID'] . "' selected>" . $issueLogType['shortName'] . "</option>\n";
-        }else{
-          echo "<option value='" . $issueLogType['issueLogTypeID'] . "'>" . $issueLogType['shortName'] . "</option>\n";
-        }
-      }
-      ?>
-      </select>
-    </td>
-    </tr>
+		<td>
+			<select name='issueLogTypeID' id='issueLogTypeID'>
+			<option value=''></option>
+			<?php
+			foreach ($issueLogTypeArray as $issueLogType){
+				if (!(trim(strval($issueLogType['issueLogTypeID'])) != trim(strval($issueLog->issueLogTypeID)))){
+					echo "<option value='" . $issueLogType['issueLogTypeID'] . "' selected>" . $issueLogType['shortName'] . "</option>\n";
+				}else{
+					echo "<option value='" . $issueLogType['issueLogTypeID'] . "'>" . $issueLogType['shortName'] . "</option>\n";
+				}
+			}
+			?>
+			</select>
+		</td>
+		</tr>
 
 		<tr>
 		<td style='vertical-align:top;text-align:right;'><label for='issueStartDate'><b>Start date:</b></label></td>
@@ -578,7 +578,7 @@ switch ($_GET['action']) {
 		</td>
 		</tr>
 
-    <tr>
+		<tr>
 		<td style='vertical-align:top;text-align:right;'><label for='issueDate'><b>End date:</b></label></td>
 		<td>
 		<input class='date-pick' id='issueEndDate' name='issueEndDate' style='width:80px' value='<?php echo $issueEndDate; ?>' />
@@ -613,7 +613,7 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
@@ -666,21 +666,22 @@ switch ($_GET['action']) {
 		<div id='div_updateForm'>
 		<table class="thickboxTable" style="background-image:url('images/title.gif');background-repeat:no-repeat;width:200px;">
 		<tr>
-		<td colspan='2'><br /><span class='headerText'>Update</span><br /></td>
+		<td colspan='3'><span class='headerText'>Update</span><br /></td>
 		</tr>
 		<tr>
+
+		</tr>
+		<tr>
+		
 		<td>
 		<?php
 
-		echo "<input type='text' id='updateVal' name='updateVal' value='" . $instance->shortName . "' style='width:190px;'/></td><td><a href='javascript:updateData(\"" . $className . "\", \"" . $updateId . "\");'>update</a>";
+		echo "<input type='text' id='updateVal' name='updateVal' value='" . $instance->shortName . "' style='width:190px;'/></td><td><a href='javascript:updateData(\"" . $className . "\", \"" . $updateId . "\");' id='updateButton'>update</a>";
 
 		?>
 
-
 		</td>
-		</tr>
-		<tr>
-		<td colspan='2'><p><a href='#' onclick='window.parent.tb_remove(); return false'>close</a></td>
+		<td colspan='2'><p><a href='#' onclick='window.parent.tb_remove(); return false' id='closeButton'>close</a></td>
 		</tr>
 		</table>
 		</div>
@@ -693,9 +694,9 @@ switch ($_GET['action']) {
 				   if(e.keyCode == 13) {
 					   updateData("<?php echo $className; ?>", "<?php echo $updateId; ?>");
 				   }
-        	});
+					});
 
-        </script>
+				</script>
 
 
 		<?php
@@ -821,8 +822,8 @@ switch ($_GET['action']) {
 
 
 	default:
-       echo "Action " . $action . " not set up!";
-       break;
+				echo "Action " . $action . " not set up!";
+				break;
 
 
 }

@@ -1,34 +1,34 @@
 html {
- height: 100%;
- margin: 0;
- padding: 0;
- -webkit-font-smoothing: antialiased;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
- height: 100%;
- text-decoration: none;
- color:  #666;
- font-family: Arial, sans-serif;
- font-size: 14px;
- font-weight: 30;
- background: #E7E8E8;
- margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
- padding: 0;
- text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
- background: #E7E8E8 url(../images/bg-gray-texture.jpg) repeat top left;
- -webkit-font-smoothing: antialiased;
+	height: 100%;
+	text-decoration: none;
+	color:  #666;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 30;
+	background: #E7E8E8;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	background: #E7E8E8 url(../images/bg-gray-texture.jpg) repeat top left;
+	-webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
- margin: 0 auto -2em;
- height; 120px;
- background-image: url("../images/back-header.jpg");
- background-repeat: repeat-x;
+	margin: 0 auto -2em;
+	height; 120px;
+	background-image: url("../images/back-header.jpg");
+	background-repeat: repeat-x;
 }
 
 .push {
- height: 2em;
+	height: 2em;
 }
 
 .footer {
@@ -38,7 +38,7 @@ color: #4d4d4d;
 text-align:center;
 width:100%;
 position: absolute;
-} 
+}
 
 a {color:#4d4d4d;}
 a:active {color:#94a9be;}
@@ -48,8 +48,8 @@ a:focus {color:#94a9be; outline: none; -moz-outline-style: none;}
 a.bigLink {font-size:103%; }
 
 span.smallText {
- color:#3D545D;
- font-size:92%;
+	color:#3D545D;
+	font-size:92%;
 }
 
 span.smallerText {
@@ -62,15 +62,15 @@ span.redText{color:red}
 span.normalText{color:#3D545D}
 
 a.smallLink {
- font-size: 12px;
- text-decoration: none;
- color: #1B76A9;
+	font-size: 12px;
+	text-decoration: none;
+	color: #1B76A9;
 }
 
 span.smallGreyText {
- font-size: 85%;
- font-weight: normal;
- color: gray
+	font-size: 85%;
+	font-weight: normal;
+	color: gray
 }
 
 img {border:0;}
@@ -83,59 +83,59 @@ select option { color: #3D545D; font-family: "arial"; font-size: 8pt; font-weigh
 input, select, multiple, textarea{color: #3D545D; font-family: "arial"; font-size: 8pt; font-weight: medium;}
 
 table#title {
- padding: 0px;
- background-image: url('../images/organizationstitle.jpg');
- background-repeat: no-repeat;
- height: 120px;
- width: 900px;
+	padding: 0px;
+	background-image: url('../images/organizationstitle.jpg');
+	background-repeat: no-repeat;
+	height: 120px;
+	width: 900px;
 }
 
 table.headerTable {
- padding: 1px;
- width: 1024px;
- min-height:40px;
- background: none !important;
- border-collapse: collapse;
+	padding: 1px;
+	width: 1024px;
+	min-height:40px;
+	background: none !important;
+	border-collapse: collapse;
 }
 
 .headerText {font-size:125%;font-weight:bold; }
 
 span.searchLetter {
- margin: 0px;
- padding-left: 1px;
- padding-right: 1px;
- color: #fff;
- font-family: Courier, monospace;
+	margin: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	color: #fff;
+	font-family: Courier, monospace;
 }
 
 span.searchLetter a {
- color: #fff;
+	color: #fff;
 }
 
 span.searchLetterSelected {
- margin: 0px;
- padding-left: 1px;
- padding-right: 1px;
- background-color: #A9D0E0;
- color: #fff;
+	margin: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	background-color: #A9D0E0;
+	color: #fff;
 }
 
 span.searchLetter a:hover {
-     text-decoration: none;
-     background-color: #4d4d4d;
-     margin: 0px;
+			text-decoration: none;
+			background-color: #4d4d4d;
+			margin: 0px;
 }
 
 #search_box #search_organization {
- float: right;
- padding: 5px;
- border: solid 1px #e0dfe3;
- width: 180px;
- background: #fff;
+	float: right;
+	padding: 5px;
+	border: solid 1px #e0dfe3;
+	width: 180px;
+	background: #fff;
 }
 #search_box #go {
-    float: right;
-    margin: 3px 4px 0 0;
+		float: right;
+		margin: 3px 4px 0 0;
 }
 
 /* following is for the right panel (helpful links) in the organizations page
@@ -239,7 +239,7 @@ div.grayBorder {
 	border-color: #e0dfe3;
 }
 
-table.dataTable {	
+table.dataTable {
 	border-width: 0 0 1px 1px;
 	border-style: solid;
 	border-color: #e0dfe3;
@@ -356,40 +356,40 @@ table.sample td.bottom {
 
 
 .sidemenu{
-    background-color: #1b77aa;
-    width: 120px;
-    vertical-align: top;
-    text-align: left;
-    font-size: 12px;
-    color: #fff;
+		background-color: #1b77aa;
+		width: 120px;
+		vertical-align: top;
+		text-align: left;
+		font-size: 12px;
+		color: #fff;
 }
 
 .sidemenu a:link {
-    text-decoration: none;
-    color: #fff;
+		text-decoration: none;
+		color: #fff;
 }
 
 .sidemenu a:hover {
-    text-decoration: none;
-    color: #ccc;
+		text-decoration: none;
+		color: #ccc;
 }
 
 .sidemenu span.icon{
-  display: none;
+	display: none;
 }
 
 .sidemenu div {
 }
 
 .sidemenuselected {
-    padding: 10px;
-    border-bottom: 1px solid #1b77aa;
-    background-color: #DAE6EA;
-    width: 150px !important;
+		padding: 10px;
+		border-bottom: 1px solid #1b77aa;
+		background-color: #DAE6EA;
+		width: 150px !important;
 }
 
 .sidemenuselected:last-child {
-    border-bottom: 1px solid #DAE6EA ;
+		border-bottom: 1px solid #DAE6EA ;
 }
 
 .sidemenuunselected {
@@ -399,39 +399,39 @@ table.sample td.bottom {
 }
 
 .sidemenuselected a {
-     color: #1b77aa !important;
+			color: #1b77aa !important;
 }
 
 .sidemenuselected .link {
-     color: #1b77aa !important;
+			color: #1b77aa !important;
 }
 
 .mainContent{
-    background-color: #f9fafb;
-    text-align:left;
-    vertical-align: top;
-    border: solid 1px #e0dfe3;
+		background-color: #f9fafb;
+		text-align:left;
+		vertical-align: top;
+		border: solid 1px #e0dfe3;
 }
 
 
-table.formTable td {	
+table.formTable td {
 	margin:4px;
 	padding:4px;
 }
 
-table.formTable tr {	
+table.formTable tr {
 	vertical-align:top;
 }
 
 
-table.formTable td.alt {	
+table.formTable td.alt {
 	margin:4px;
 	padding:4px;
 	background-color:#f0f2f4;
 }
 
 
-table.verticalFormTable {	
+table.verticalFormTable {
 	border-width: 0 0 1px 1px;
 	border-style: solid;
 	border-color: #e0dfe3;
@@ -461,22 +461,22 @@ table.verticalFormTable th {
 }
 
 
-table.verticalFormTable tr {	
+table.verticalFormTable tr {
 	vertical-align:top;
 }
 
 
-table.verticalFormTable td.complete {	
+table.verticalFormTable td.complete {
 	background-color:#f2f5f7;
 }
 
-table.verticalFormTable td.outstanding {	
+table.verticalFormTable td.outstanding {
 	background-color:#fdf2e7;
 }
 
 
 
-table.borderedFormTable {	
+table.borderedFormTable {
 	border-width: 0 0 1px 1px;
 	border-style: solid;
 	border-color: #e0dfe3;
@@ -512,9 +512,9 @@ table.borderedFormTable td.searchRow {
 }
 
 table.borderedFormTable td.searchRow label b {
-     color: #fff;
-     font-weight: 100;
-     font-size: 11px;
+			color: #fff;
+			font-weight: 100;
+			font-size: 11px;
 }
 
 table.borderedFormTable th {
@@ -533,7 +533,7 @@ table.borderedFormTable tr {vertical-align: top;}
 
 
 
-table.borderedHeadTable {	
+table.borderedHeadTable {
 	width:947px;
 	border-width:  0 0 1px 1px;
 	border-style: solid;
@@ -560,7 +560,7 @@ table.borderedHeadTable tr {
 	vertical-align:middle;
 }
 
-table.linedFormTable {	
+table.linedFormTable {
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
 	border-color: #e6e5e9;
@@ -595,28 +595,28 @@ table.linedFormTable th {
 	background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
 }
 
-table.linedFormTable tr {	
+table.linedFormTable tr {
 	vertical-align:top;
 }
 
 
-table.linedFormTable tr.lightGrayBackground td {	
+table.linedFormTable tr.lightGrayBackground td {
 	background-color:#ebebeb;
 }
 
-table.linedFormTable td.outstanding {	
+table.linedFormTable td.outstanding {
 	background-color:#fdf2e7;
 }
 
 
 
 .printContent{
-    padding: 24px 24px 24px 24px; 
-    background-color: white; 
-    text-align:left;
-    background-color: white;
-    vertical-align: top;
-    
+		padding: 24px 24px 24px 24px;
+		background-color: white;
+		text-align:left;
+		background-color: white;
+		vertical-align: top;
+		
 }
 
 table.noBorder td { border:0; }
@@ -632,18 +632,18 @@ table.noMargin td { border:0px;margin:0px; padding:0px; }
 div.thickboxDiv{display:none;}
 
 table.thickboxTable{
- padding: 0;
- text-decoration: none;
- color:  #2c3c42;
- font-family: "arial";
- font-size: 8pt;
- font-weight: heavy;
- background-image: none !important;
- width: auto !important;
+	padding: 0;
+	text-decoration: none;
+	color:  #2c3c42;
+	font-family: "arial";
+	font-size: 8pt;
+	font-weight: heavy;
+	background-image: none !important;
+	width: auto !important;
 }
 
 table.thickboxTable td{
- padding: 2px;
+	padding: 2px;
 }
 
 .smallText{font-size:small;}
@@ -674,15 +674,15 @@ a.dp-choose-date {
 	display: block;
 	text-indent: -2000px;
 	overflow: hidden;
-	background: url('../images/calendar.gif') no-repeat; 
+	background: url('../images/calendar.gif') no-repeat;
 }
 a.dp-choose-date.dp-disabled {
 	background-position: 0 -20px;
 	cursor: default;
 }
 /* makes the input field shorter once the date picker code
- * has run (to allow space for the calendar icon
- */
+	* has run (to allow space for the calendar icon
+	*/
 input.dp-applied {
 	width: 140px;
 	float: left;
@@ -692,528 +692,528 @@ input.dp-applied {
 .licenseAddInput{margin-top:5px;margin-bottom;5px;}
 
 hr {
-  border:0;
-  border-bottom: 1px solid #e0dfe3;
-  height: 0;
-  /*-*/width: auto !important;
-  background: #e0dfe3;
+	border:0;
+	border-bottom: 1px solid #e0dfe3;
+	height: 0;
+	/*-*/width: auto !important;
+	background: #e0dfe3;
 }
 
 /*--- Additional Custom CSS ---*/
 
 .titleTable {
-     height: 120px;
-     /*-*/margin-bottom: 25px;
+			height: 120px;
+			/*-*/margin-bottom: 25px;
 }
 
 .titleTable td {
-     /*-*/height: 40px !important;
-     /*-*/padding-top: 20px;
+			/*-*/height: 40px !important;
+			/*-*/padding-top: 20px;
 }
 
 .titleTable td a {
-     /*-*/padding-left: 0px;
+			/*-*/padding-left: 0px;
 }
 
 .titleTable ul.tabs {
-     padding-right: 15px;
+			padding-right: 15px;
 }
 
 .titleTable tr:first-child td div {
-     padding-right: 20px;
+			padding-right: 20px;
 }
 
 .titleTable tr:first-child td div a:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #menu-end {
-     display: none;
+			display: none;
 }
 
 .noBorder > tbody > tr > td:nth-child(1) {
-     /*-*/width: 100px !important;
+			/*-*/width: 100px !important;
 }
 
 a.newSearch:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 a#showMoreOptions:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #hideShowOptions {
-     padding: 10px;
+			padding: 10px;
 }
 
 #div_searchName {
-     margin-left: 0 !important;
-     margin-top: 6px;
+			margin-left: 0 !important;
+			margin-top: 6px;
 }
 
 #div_searchISBNOrISSN {
-     margin-left: 0 !important;
-     margin-top: 6px;
+			margin-left: 0 !important;
+			margin-top: 6px;
 }
 
 #div_searchFund {
-     margin-left: 0 !important;
-     margin-top: 6px;
+			margin-left: 0 !important;
+			margin-top: 6px;
 }
 
 #div_searchID {
-     margin-left: 0 !important;
-     margin-top: 6px;
+			margin-left: 0 !important;
+			margin-top: 6px;
 }
 
 #div_searchResourceNote {
-     margin-left: 0 !important;
-     margin-top: 6px;
+			margin-left: 0 !important;
+			margin-top: 6px;
 }
 
 .searchButton {
-     text-transform: uppercase;
+			text-transform: uppercase;
 }
 
 #searchResourceIDButton {
-     text-transform: uppercase;
+			text-transform: uppercase;
 }
 
 #searchCreateDateEnd {
-     margin-left: 7px;
-     margin-bottom: 10px;
+			margin-left: 7px;
+			margin-bottom: 10px;
 }
 
 img[src*="menu-bar.gif"] {
-    display: none;
+		display: none;
 }
 
 img[src*="arrowup.png"] {
-    padding-left: 6px;
+		padding-left: 6px;
 }
 
 .noBorderTable td {
-     vertical-align: middle !important;
+			vertical-align: middle !important;
 }
 
 /*--- Table Column Widths ---*/
 
 table.dataTable th:nth-of-type(1) {
-     min-width: 240px;
+			min-width: 240px;
 }
 
 table.dataTable th:nth-of-type(2) {
-     min-width: 100px;
+			min-width: 100px;
 }
 
 table.dataTable th:nth-of-type(3) {
-     min-width: 150px;
+			min-width: 150px;
 }
 
 table.dataTable th:nth-of-type(4) {
-     min-width: 100px;
+			min-width: 100px;
 }
 
 /*-----*/
 
 #div_searchResults > span:nth-child(2) {
-     padding-right: 20px;
+			padding-right: 20px;
 }
 
 a.setPage:hover {
-     text-decoration: none;
-     color: #ccc;
+			text-decoration: none;
+			color: #ccc;
 }
 
 .noBorderTable tr td {
-     background: none;
+			background: none;
 }
 
 /*--- Links with Icons ---*/
 
 a.newSearch:before {
-  font-family: FontAwesome;
-  content: "\f00e";
-  font-size: 11px;
-  margin-right: 3px;
+	font-family: FontAwesome;
+	content: "\f00e";
+	font-size: 11px;
+	margin-right: 3px;
 }
 
 a.newSearch {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.newSearch:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 a#logout:before {
-  font-family: FontAwesome;
-  content: "\f007";
-  font-size: 11px;
-  margin-right: 3px;
+	font-family: FontAwesome;
+	content: "\f007";
+	font-size: 11px;
+	margin-right: 3px;
 }
 
 a#logout {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
-     position: relative;
-     top: 4px;
-     left: -4px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
+			position: relative;
+			top: 4px;
+			left: -4px;
 }
 
 a#logout:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 a#showMoreOptions:before {
-  font-family: FontAwesome;
-  content: "\f055";
-  font-size: 11px;
-  margin-right: 3px;
+	font-family: FontAwesome;
+	content: "\f055";
+	font-size: 11px;
+	margin-right: 3px;
 }
 
 a#showMoreOptions {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a#showMoreOptions:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #print-view a.helpfulLink:before {
-  font-family: FontAwesome;
-  content: "\f02f";
-  font-size: 11px;
-  margin-right: 3px;
+	font-family: FontAwesome;
+	content: "\f02f";
+	font-size: 11px;
+	margin-right: 3px;
 }
 
 #print-view a {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 #print-view a:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 td.searchRow > b {
-     color: #fff;
-     font-weight: normal;
-     position: relative;
-     top: 6px;
+			color: #fff;
+			font-weight: normal;
+			position: relative;
+			top: 6px;
 }
 
 td.searchRow input,
 td.searchRow select,
 td.searchRow multiple,
 td.searchRow textarea {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 #div_additionalSearch > table > tbody > tr:nth-child(3) > td a.dp-choose-date {
-     margin-top: 5px;
+			margin-top: 5px;
 }
 
 #span_resourceName {
-     padding: 25px 20px;
-     padding-top: 0;
+			padding: 25px 20px;
+			padding-top: 0;
 }
 
 .span_AttachmentNumber {
-     color: #FFF654;
-     margin-left: 0px !important;
+			color: #FFF654;
+			margin-left: 0px !important;
 }
 
 .sidemenuselected .span_AttachmentNumber {
-     color: #666672;
+			color: #666672;
 }
 
 .sidemenuunselected .span_AttachmentNumber {
-     color: #FFF654;
-     margin-left: 0px !important;
+			color: #FFF654;
+			margin-left: 0px !important;
 }
 
 .resource_tab_content {
-     width: 630px !important;
+			width: 630px !important;
 }
 
 .sidemenu {
-     width: 170px;
-     float: left;
-      margin-right: 8px;
+			width: 170px;
+			float: left;
+			margin-right: 8px;
 }
 
 .mainContent {
-     width: 430px;
-     padding: 10px;
+			width: 430px;
+			padding: 10px;
 }
 
 .linedFormTable {
-     width: 430px !important;
+			width: 430px !important;
 }
 
 .rightPanel {
-     text-align: left;
+			text-align: left;
 }
 
 div.rightPanelLink {
-     margin: 0;
-     font-size: 12px;
+			margin: 0;
+			font-size: 12px;
 }
 
 div.rightPanelHeader {
-     color: #1B76A9;
-     margin-bottom: 5px;
+			color: #1B76A9;
+			margin-bottom: 5px;
 }
 
 #title-search {
-     padding: 20px;
-     padding-top: 0;
-     padding-bottom: 10px;
-     margin-bottom: 10px;
+			padding: 20px;
+			padding-top: 0;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
 }
 
 input[type="button"]:hover {
-     cursor: pointer;
+			cursor: pointer;
 }
 
 table.surroundBox table.noBorder {
-     margin: 15px !important;
+			margin: 15px !important;
 }
 
 #resourcePromptForm table.noBorderTable input {
-     color: #FFFFFF;
-     font-family: "Arial", sans-serif;
-     font-size: 11px;
-     font-weight: normal;
-     background: #1b76a9;
-     border: none;
-     padding: 5px 10px;
-     text-transform: capitalize;
+			color: #FFFFFF;
+			font-family: "Arial", sans-serif;
+			font-size: 11px;
+			font-weight: normal;
+			background: #1b76a9;
+			border: none;
+			padding: 5px 10px;
+			text-transform: capitalize;
 }
 
 #pagination-div {
-     vertical-align: bottom;
-     text-align: left;
-     clear:both;
-     margin-top: 12px;
+			vertical-align: bottom;
+			text-align: left;
+			clear:both;
+			margin-top: 12px;
 }
 
 td#org-title {
-     width: auto !important;
-     margin: 0;
-     padding: 6px;
-     border-width: 1px 0 0 0;
-     border-style: solid;
-     border-color: #e6e5e9;
-     background-color: #cad7e1;
-     -moz-border-radius: 0px;
-     background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
+			width: auto !important;
+			margin: 0;
+			padding: 6px;
+			border-width: 1px 0 0 0;
+			border-style: solid;
+			border-color: #e6e5e9;
+			background-color: #cad7e1;
+			-moz-border-radius: 0px;
+			background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
 }
 
 #organizationForm table.thickboxTable table.noBorderTable input {
-     color: #FFFFFF;
-     font-family: "Arial", sans-serif;
-     font-size: 11px;
-     font-weight: normal;
-     background: #1b76a9;
-     border: none;
-     padding: 5px 10px;
-     text-transform: capitalize;
+			color: #FFFFFF;
+			font-family: "Arial", sans-serif;
+			font-size: 11px;
+			font-weight: normal;
+			background: #1b76a9;
+			border: none;
+			padding: 5px 10px;
+			text-transform: capitalize;
 }
 
 /*--- Organizations Side Menu Icons ---*/
 
 a.showOrganization:before {
-  font-family: FontAwesome;
-  content: "\f1ad";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f1ad";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showOrganization {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showOrganization:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_organization .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f1ad";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f1ad";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 a.showAliases:before {
-  font-family: FontAwesome;
-  content: "\f061";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f061";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showAliases {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showAliases:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_aliases .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f061";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f061";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 a.showContacts:before {
-  font-family: FontAwesome;
-  content: "\f234";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f234";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showContacts {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showContacts:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_contacts .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f0c6";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f0c6";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 a.showAccount:before {
-  font-family: FontAwesome;
-  content: "\f0c0";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f0c0";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showAccount {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showAccount:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_account .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f0c0";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f0c0";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 a.showIssues:before {
-  font-family: FontAwesome;
-  content: "\f071";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f071";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showIssues {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showIssues:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_issues .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f071";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f071";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 a.showLicenses:before {
-  font-family: FontAwesome;
-  content: "\f044";
-  font-size: 11px;
-  margin-right: 5px;
+	font-family: FontAwesome;
+	content: "\f044";
+	font-size: 11px;
+	margin-right: 5px;
 }
 
 a.showLicenses {
-     text-decoration: none;
-     text-transform: capitalize;
-     font-size: 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-size: 12px;
 }
 
 a.showLicenses:hover {
-     color: #ccc;
+			color: #ccc;
 }
 
 #div_licenses .sidemenuselected .link:before {
-     font-family: FontAwesome;
-     content: "\f044";
-     font-size: 11px;
-     margin-right: 5px;
+			font-family: FontAwesome;
+			content: "\f044";
+			font-size: 11px;
+			margin-right: 5px;
 }
 
 div#div_organizationDetails i {
-     padding-left: 10px;
+			padding-left: 10px;
 }
 
 #print-view {
-     width: 220px;
-     float: right;
-     padding: 20px;
-     background: #fff;
+			width: 220px;
+			float: right;
+			padding: 20px;
+			background: #fff;
 }
 
 #search_box .fa-search:before {
-     position: relative;
-     top: -18px;
-     left: -198px;
-     font-size: 11px;
+			position: relative;
+			top: -18px;
+			left: -198px;
+			font-size: 11px;
 }
 
 #span_orgName {
-     padding: 25px 20px;
-     padding-top: 0;
+			padding: 25px 20px;
+			padding-top: 0;
 }
 
 #print-view h4 {
-     margin-top: 20px !important;
-     margin-bottom: 5px;
-     color: #1B76A9;
+			margin-top: 20px !important;
+			margin-bottom: 5px;
+			color: #1B76A9;
 }
 
 #org-name a {
-     text-decoration: underline;
+			text-decoration: underline;
 }
 
 #print-view a.helpfulLink {
-     text-decoration: underline !important;
+			text-decoration: underline !important;
 }
 
 a.helpfulLink {
-     text-decoration: underline !important;
+			text-decoration: underline !important;
 }
 
 /*---
@@ -1363,6 +1363,8 @@ table.thickboxTable .headerText {
 	padding: 5px 10px;
 	text-transform: capitalize;
 	float: left;
+	position: relative;
+	left: -37px;
 }
 
 #div_organizationForm input[value=cancel]:hover {
@@ -1475,3 +1477,62 @@ table.thickboxTable .headerText {
 	cursor: pointer;
 }
 
+/*--- Firefox Only ---*/
+
+@-moz-document url-prefix() {
+	#div_aliasForm input[value="cancel"] {
+		left: -63px;
+	}
+	
+	#div_contactForm input[value="cancel"] {
+		left: -114px;
+	}
+	
+	#div_organizationForm input[value=cancel] {
+		left: -32px;
+	}
+}
+
+/*--- IE 11 Fix for Sidemenu Link Color ---*/
+
+.sidemenu span.link a {
+	color: #fff;
+}
+
+.sidemenu span.link a:hover {
+	color: #ccc;
+}
+
+/*--- Update User Modal Window (Edit Link) ---*/
+
+#div_updateForm a#updateButton {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+#div_updateForm a#updateButton:hover {
+	cursor: pointer;
+}
+
+#div_updateForm a#closeButton {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+#div_updateForm a#closeButton:hover {
+	cursor: pointer;
+}
