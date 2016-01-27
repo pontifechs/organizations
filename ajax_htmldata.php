@@ -25,9 +25,9 @@ include_once 'user.php';
 switch ($_GET['action']) {
 
 
-    case 'getOrganizationDetails':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getOrganizationDetails':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 		$createUser = new User(new NamedArguments(array('primaryKey' => $organization->createLoginID)));
 		$updateUser = new User(new NamedArguments(array('primaryKey' => $organization->updateLoginID)));
@@ -181,21 +181,21 @@ switch ($_GET['action']) {
 			echo "<i>Last Update: " . format_date($organization->updateDate); ?> by <?php echo $updateUser->firstName . " " . $updateUser->lastName . "</i>";
 		}
 
-        break;
+				break;
 
 
-    case 'getOrganizationName':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getOrganizationName':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 		echo $organization->name;
-        break;
+				break;
 
 
 
-    case 'getAliasDetails':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getAliasDetails':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 
 		//get aliases
@@ -253,44 +253,44 @@ switch ($_GET['action']) {
 
 		<?php
 
-        break;
+				break;
 
 
 
 
 
 
-    case 'getContactDetails':
-    	$organizationID = $_GET['organizationID'];
-    	if (isset($_GET['archiveInd'])) $archiveInd = $_GET['archiveInd']; else $archiveInd='';
-    	if (isset($_GET['showArchivesInd'])) $showArchivesInd = $_GET['showArchivesInd']; else $showArchivesInd='';
+		case 'getContactDetails':
+			$organizationID = $_GET['organizationID'];
+			if (isset($_GET['archiveInd'])) $archiveInd = $_GET['archiveInd']; else $archiveInd='';
+			if (isset($_GET['showArchivesInd'])) $showArchivesInd = $_GET['showArchivesInd']; else $showArchivesInd='';
 
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
-
-
- 		//get contacts
- 		$sanitizedInstance = array();
- 		$contactArray = array();
- 		$contactObjArray = array();
- 		if ((isset($archiveInd)) && ($archiveInd == "1")){
- 			//if we want archives to be displayed
- 			if ($showArchivesInd == "1"){
- 				if (count($organization->getArchivedContacts()) > 0){
- 					echo "<i><b>The following are archived contacts:</b></i>";
- 				}
- 				$contactObjArray = $organization->getArchivedContacts();
- 			}
- 		}else{
- 			$contactObjArray = $organization->getUnarchivedContacts();
- 		}
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 
- 		foreach ($contactObjArray as $contact) {
- 			foreach (array_keys($contact->attributeNames) as $attributeName) {
- 				$sanitizedInstance[$attributeName] = $contact->$attributeName;
- 			}
+			//get contacts
+			$sanitizedInstance = array();
+			$contactArray = array();
+			$contactObjArray = array();
+			if ((isset($archiveInd)) && ($archiveInd == "1")){
+				//if we want archives to be displayed
+				if ($showArchivesInd == "1"){
+					if (count($organization->getArchivedContacts()) > 0){
+						echo "<i><b>The following are archived contacts:</b></i>";
+					}
+					$contactObjArray = $organization->getArchivedContacts();
+				}
+			}else{
+				$contactObjArray = $organization->getUnarchivedContacts();
+			}
 
- 			$sanitizedInstance[$contact->primaryKeyName] = $contact->primaryKey;
+
+			foreach ($contactObjArray as $contact) {
+				foreach (array_keys($contact->attributeNames) as $attributeName) {
+					$sanitizedInstance[$attributeName] = $contact->$attributeName;
+				}
+
+				$sanitizedInstance[$contact->primaryKeyName] = $contact->primaryKey;
 
 			//get all of this contacts roles
 			$contactRoleObj = new ContactRole();
@@ -299,9 +299,9 @@ switch ($_GET['action']) {
 				$contactRoleArray[]=$contactRoleObj->shortName;
 			}
 
- 			$sanitizedInstance['contactRoles'] = implode("<br />", $contactRoleArray);
+				$sanitizedInstance['contactRoles'] = implode("<br />", $contactRoleArray);
 
- 			array_push($contactArray, $sanitizedInstance);
+				array_push($contactArray, $sanitizedInstance);
 		}
 
 		if (count($contactArray) > 0){
@@ -418,30 +418,30 @@ switch ($_GET['action']) {
 			echo "<i><a href='javascript:updateArchivedContacts(0);'>hide archived contacts</a></i><br />";
 		}
 
-        break;
+				break;
 
 
 
 
-    case 'getAccountDetails':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getAccountDetails':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 
- 		//get external logins
- 		$sanitizedInstance = array();
- 		$externalLoginArray = array();
- 		foreach ($organization->getExternalLogins() as $instance) {
- 			foreach (array_keys($instance->attributeNames) as $attributeName) {
- 				$sanitizedInstance[$attributeName] = $instance->$attributeName;
- 			}
+			//get external logins
+			$sanitizedInstance = array();
+			$externalLoginArray = array();
+			foreach ($organization->getExternalLogins() as $instance) {
+				foreach (array_keys($instance->attributeNames) as $attributeName) {
+					$sanitizedInstance[$attributeName] = $instance->$attributeName;
+				}
 
- 			$sanitizedInstance[$instance->primaryKeyName] = $instance->primaryKey;
+				$sanitizedInstance[$instance->primaryKeyName] = $instance->primaryKey;
 
- 			$externalLoginType = new ExternalLoginType(new NamedArguments(array('primaryKey' => $instance->externalLoginTypeID)));
- 			$sanitizedInstance['externalLoginTypeShortName'] = $externalLoginType->shortName;
+				$externalLoginType = new ExternalLoginType(new NamedArguments(array('primaryKey' => $instance->externalLoginTypeID)));
+				$sanitizedInstance['externalLoginTypeShortName'] = $externalLoginType->shortName;
 
- 			array_push($externalLoginArray, $sanitizedInstance);
+				array_push($externalLoginArray, $sanitizedInstance);
 		}
 
 		if (count($externalLoginArray) > 0){
@@ -464,7 +464,7 @@ switch ($_GET['action']) {
 				<?php if ($externalLogin['loginURL']) { ?>
 				<tr>
 				<td style='vertical-align:top;text-align:left;'>Login URL:</td>
-				<td><?php echo $externalLogin['loginURL']; 
+				<td><?php echo $externalLogin['loginURL'];
 					if (strpos($externalLogin['loginURL'], 'http') !== 0) {
 						$externalLogin['loginURL'] = "http://" . $externalLogin['loginURL'];
 					}
@@ -529,28 +529,28 @@ switch ($_GET['action']) {
 		<?php
 		}
 
-        break;
+				break;
 
 
 
 
 
-    case 'getIssueDetails':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getIssueDetails':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 
- 		//get external logins
- 		$sanitizedInstance = array();
- 		$issueLogArray = array();
- 		foreach ($organization->getIssueLog() as $instance) {
- 			foreach (array_keys($instance->attributeNames) as $attributeName) {
- 				$sanitizedInstance[$attributeName] = $instance->$attributeName;
- 			}
+			//get external logins
+			$sanitizedInstance = array();
+			$issueLogArray = array();
+			foreach ($organization->getIssueLog() as $instance) {
+				foreach (array_keys($instance->attributeNames) as $attributeName) {
+					$sanitizedInstance[$attributeName] = $instance->$attributeName;
+				}
 
- 			$sanitizedInstance['issueLogType'] = $instance->getTypeShortName();
+				$sanitizedInstance['issueLogType'] = $instance->getTypeShortName();
 
- 			$sanitizedInstance[$instance->primaryKeyName] = $instance->primaryKey;
+				$sanitizedInstance[$instance->primaryKeyName] = $instance->primaryKey;
 
 			$updateUser = new User(new NamedArguments(array('primaryKey' => $instance->updateLoginID)));
 
@@ -561,7 +561,7 @@ switch ($_GET['action']) {
 				$sanitizedInstance['updateUser'] = $instance->updateLoginID;
 			}
 
- 			array_push($issueLogArray, $sanitizedInstance);
+				array_push($issueLogArray, $sanitizedInstance);
 		}
 
 		$charsToRemove = array("*", "_");
@@ -582,7 +582,7 @@ switch ($_GET['action']) {
 			}else{
 				$issueStartDate='';
 			}
-      if (($issueLog['issueEndDate'] != '') && ($issueLog['issueEndDate'] != "0000-00-00")) {
+			if (($issueLog['issueEndDate'] != '') && ($issueLog['issueEndDate'] != "0000-00-00")) {
 				$issueEndDate= format_date($issueLog['issueEndDate']);
 			}else{
 				$issueEndDate='';
@@ -591,24 +591,24 @@ switch ($_GET['action']) {
 			?>
 			<tr>
 			<td style='width:80px;'><?php echo format_date($issueLog['updateDate']); ?><br />by <i><?php echo $issueLog['updateUser']; ?></i></td>
-			<td><?php 
-        if ($issueStartDate && $issueEndDate) {
-          echo "$issueStartDate to $issueEndDate";
-        } elseif ($issueStartDate) {
-          echo "start: $issueStartDate";
-        } elseif ($issueEndDate) {
-          echo "end: $issueEndDate";
-        }
-      ?>
-      </td>
-      <td><?php echo $issueLog['issueLogType'] ?></td>
+			<td><?php
+				if ($issueStartDate && $issueEndDate) {
+					echo "$issueStartDate to $issueEndDate";
+				} elseif ($issueStartDate) {
+					echo "start: $issueStartDate";
+				} elseif ($issueEndDate) {
+					echo "end: $issueEndDate";
+				}
+			?>
+			</td>
+			<td><?php echo $issueLog['issueLogType'] ?></td>
 			<td style='width:360px;'><?php echo nl2br(str_replace($charsToRemove, "", $issueLog['noteText'])); ?>
-			<?php 
+			<?php
 			if ($user->canEdit()){
 				echo "<span style='float:right; vertical-align:top;'><a href='ajax_forms.php?action=getIssueLogForm&height=250&width=265&modal=true&organizationID=" . $organizationID . "&issueLogID=" . $issueLog['issueLogID'] . "' class='thickbox'><img src='images/edit.gif' alt='edit' title='edit issue'></a>";
 				echo "&nbsp;<a href='javascript:removeIssueLog(" . $issueLog['issueLogID'] . ")'><img src='images/cross.gif' alt='remove issue' title='remove issue'></a>";
 				echo "</span>";
-			} 
+			}
 			?>
 			</td></tr>
 		<?php } ?>
@@ -622,19 +622,19 @@ switch ($_GET['action']) {
 
 		if ($user->canEdit()){
 		?>
-			<a href='ajax_forms.php?action=getIssueLogForm&height=250&width=265&modal=true&organizationID=<?php echo $organizationID; ?>' class='thickbox' id='newIssue'>add new issue</a> - 
+			<a href='ajax_forms.php?action=getIssueLogForm&height=250&width=265&modal=true&organizationID=<?php echo $organizationID; ?>' class='thickbox' id='newIssue'>add new issue</a> -
 		<?php
 		}
-    ?>
-      <a href='issues_export.php?organizationID=<?php echo $organizationID; ?>'>export these issues</a> - <a href='issues_export.php'>export all issues</a>
-    <?php
-        break;
+		?>
+			<a href='issues_export.php?organizationID=<?php echo $organizationID; ?>'>export these issues</a> - <a href='issues_export.php'>export all issues</a>
+		<?php
+				break;
 
 
 
-    case 'getLicenseDetails':
-    	$organizationID = $_GET['organizationID'];
-    	$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
+		case 'getLicenseDetails':
+			$organizationID = $_GET['organizationID'];
+			$organization = new Organization(new NamedArguments(array('primaryKey' => $organizationID)));
 
 		//if the licensing module is installed get license info for this organization
 		$config = new Configuration;
@@ -683,7 +683,7 @@ switch ($_GET['action']) {
 		}
 
 
-        break;
+				break;
 
 
 
@@ -728,7 +728,7 @@ switch ($_GET['action']) {
 
 			//print out page selectors
 			if ($totalRecords > $numberOfRecords){
- 				echo "<div id='pagination-div'>";
+					echo "<div id='pagination-div'>";
 				if ($pageStart == "1"){
 					echo "<span class='smallerText'><i class='fa fa-backward'></i></span>&nbsp;";
 				}else{
@@ -890,8 +890,8 @@ switch ($_GET['action']) {
 
 
 	default:
-       echo "Action " . $action . " not set up!";
-       break;
+				echo "Action " . $action . " not set up!";
+				break;
 
 
 }

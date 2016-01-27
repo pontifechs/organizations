@@ -121,7 +121,7 @@ $_SESSION['ref_script']=$currentPage;
 	</tr>
 
 	</table>
-	&nbsp;<a href='javascript:void(0)' class='newSearch'>new search</a>
+	&nbsp;<a href='javascript:void(0)' class='newSearch' id='sidebar-link-bottom'>new search</a>
 	</div>
 </td>
 <td>
@@ -133,27 +133,27 @@ $_SESSION['ref_script']=$currentPage;
 <script type="text/javascript" src="js/index.js"></script>
 <script type='text/javascript'>
 <?php
-  //used to default to previously selected values when back button is pressed
-  //if the startWith is defined set it so that it will default to the first letter picked
-  if (($_SESSION['org_startWith']) && ($reset != 'Y')){
+	//used to default to previously selected values when back button is pressed
+	//if the startWith is defined set it so that it will default to the first letter picked
+	if (($_SESSION['org_startWith']) && ($reset != 'Y')){
 	  echo "startWith = '" . $_SESSION['org_startWith'] . "';";
 	  echo "$(\"#span_letter_" . $_SESSION['org_startWith'] . "\").removeClass('searchLetter').addClass('searchLetterSelected');";
-  }
+	}
 
-  if (($_SESSION['org_pageStart']) && ($reset != 'Y')){
+	if (($_SESSION['org_pageStart']) && ($reset != 'Y')){
 	  echo "pageStart = '" . $_SESSION['org_pageStart'] . "';";
-  }
+	}
 
-  if (($_SESSION['org_numberOfRecords']) && ($reset != 'Y')){
+	if (($_SESSION['org_numberOfRecords']) && ($reset != 'Y')){
 	  echo "numberOfRecords = '" . $_SESSION['org_numberOfRecords'] . "';";
-  }
+	}
 
-  if (($_SESSION['org_orderBy']) && ($reset != 'Y')){
+	if (($_SESSION['org_orderBy']) && ($reset != 'Y')){
 	  echo "orderBy = \"" . $_SESSION['org_orderBy'] . "\";";
-  }
+	}
 
-  echo "</script>";
+	echo "</script>";
 
-  //print footer
-  include 'templates/footer.php';
+	//print footer
+	include 'templates/footer.php';
 ?>

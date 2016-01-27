@@ -32,12 +32,12 @@ body {
 }
 
 .footer {
-height: 2em;
-font-size:80%;
-color: #4d4d4d;
-text-align:center;
-width:100%;
-position: absolute;
+	height: 3em;
+	font-size: 80%;
+	text-align: center;
+	/*-*/width: 100%;
+	font-style: italic;
+	text-align: center;
 }
 
 a {color:#4d4d4d;}
@@ -53,8 +53,8 @@ span.smallText {
 }
 
 span.smallerText {
-	color:#1B77AA;
-	font-size: 100%;
+	color:#3D545D;
+	font-size: 85%;
 	font-weight: bold;
 }
 
@@ -65,6 +65,11 @@ a.smallLink {
 	font-size: 12px;
 	text-decoration: none;
 	color: #1B76A9;
+}
+
+a.smallLink:hover {
+	text-decoration: none;
+	color: #ccc;
 }
 
 span.smallGreyText {
@@ -1007,15 +1012,17 @@ table.surroundBox table.noBorder {
 }
 
 td#org-title {
-			width: auto !important;
-			margin: 0;
-			padding: 6px;
-			border-width: 1px 0 0 0;
-			border-style: solid;
-			border-color: #e6e5e9;
-			background-color: #cad7e1;
-			-moz-border-radius: 0px;
-			background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
+	width: auto !important;
+	margin: 0;
+	padding: 6px;
+	/*---
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #e6e5e9;
+	background-color: #cad7e1;
+	-moz-border-radius: 0px;
+	background: rgba(200, 200, 200, 0.5) url(../images/bg-diagonal-stripes.png) repeat top left !important;
+	---*/
 }
 
 #organizationForm table.thickboxTable table.noBorderTable input {
@@ -1274,7 +1281,6 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
-	margin-left: 5px;
 }
 
 #div_aliasForm input#submitAliasForm:hover {
@@ -1291,8 +1297,7 @@ table.thickboxTable .headerText {
 	padding: 5px 10px;
 	text-transform: capitalize;
 	margin-left: 5px;
-	position: relative;
-	left: -70px;
+	float: left;
 }
 
 #div_aliasForm input[value=cancel]:hover {
@@ -1310,7 +1315,6 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
-	margin-left: 5px;
 }
 
 #div_contactForm input#submitContactForm:hover {
@@ -1327,8 +1331,7 @@ table.thickboxTable .headerText {
 	padding: 5px 10px;
 	text-transform: capitalize;
 	margin-left: 5px;
-	position: relative;
-	left: -125px;
+	float: left;
 }
 
 #div_contactForm input[value=cancel]:hover {
@@ -1346,7 +1349,6 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
-	margin-left: 5px;
 }
 
 #div_organizationForm input#submitExternalLoginForm:hover {
@@ -1362,9 +1364,8 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
+	margin-left: 5px;
 	float: left;
-	position: relative;
-	left: -37px;
 }
 
 #div_organizationForm input[value=cancel]:hover {
@@ -1418,7 +1419,6 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
-	margin-left: 5px;
 }
 
 #div_organizationForm input#submitOrganizationChanges:hover {
@@ -1434,8 +1434,7 @@ table.thickboxTable .headerText {
 	border: none;
 	padding: 5px 10px;
 	text-transform: capitalize;
-	position: relative;
-	left: -36px;
+	float: left;
 }
 
 #div_organizationForm input#organizations-cancel:hover {
@@ -1480,17 +1479,7 @@ table.thickboxTable .headerText {
 /*--- Firefox Only ---*/
 
 @-moz-document url-prefix() {
-	#div_aliasForm input[value="cancel"] {
-		left: -63px;
-	}
-	
-	#div_contactForm input[value="cancel"] {
-		left: -114px;
-	}
-	
-	#div_organizationForm input[value=cancel] {
-		left: -32px;
-	}
+
 }
 
 /*--- IE 11 Fix for Sidemenu Link Color ---*/
@@ -1535,4 +1524,9 @@ table.thickboxTable .headerText {
 
 #div_updateForm a#closeButton:hover {
 	cursor: pointer;
+}
+
+#sidebar-link-bottom {
+	padding: 10px;
+	float: left;
 }

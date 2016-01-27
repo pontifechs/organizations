@@ -151,7 +151,7 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;text-align:left;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;float:left;'><input type='button' value='submit' name='submitOrganizationChanges' id ='submitOrganizationChanges'></td>
+					<td style='text-align:left;width:60px;'><input type='button' value='submit' name='submitOrganizationChanges' id ='submitOrganizationChanges'></td>
 					<td style='text-align:left;margin-left:6px;float:left;'><input type='button' value='cancel' onclick="tb_remove()"></td>
 				</tr>
 			</table>
@@ -228,7 +228,7 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;text-align:left;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left'><input type='button' value='submit' name='submitAliasForm' id ='submitAliasForm'></td>
+					<td style='text-align:left;width:60px;'><input type='button' value='submit' name='submitAliasForm' id ='submitAliasForm'></td>
 					<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove()"></td>
 				</tr>
 			</table>
@@ -392,7 +392,7 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left'><input type='button' value='submit' name='submitContactForm' id ='submitContactForm'></td>
+					<td style='text-align:left;width:60px;'><input type='button' value='submit' name='submitContactForm' id ='submitContactForm'></td>
 					<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove()"></td>
 				</tr>
 			</table>
@@ -497,7 +497,7 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left'><input type='button' value='submit' name='submitExternalLoginForm' id ='submitExternalLoginForm'></td>
+					<td style='text-align:left;width:60px;'><input type='button' value='submit' name='submitExternalLoginForm' id ='submitExternalLoginForm'></td>
 					<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove()"></td>
 				</tr>
 			</table>
@@ -781,10 +781,10 @@ switch ($_GET['action']) {
 		<div id='div_updateForm'>
 		<table class="thickboxTable" style="background-image:url('images/title.gif');background-repeat:no-repeat;width:240px;padding:2px;">
 		<tr><td colspan='2'><span class='headerText'><?php echo $update; ?> User</span><br /><br /></td></tr>
-		<tr><td><label for='loginID'><b>Login ID</b></label</td><td><?php if (!$loginID) { ?><input type='text' id='loginID' name='loginID' value='<?php echo $loginID; ?>' style='width:150px;'/> <?php } else { echo $loginID; } ?></td></tr>
-		<tr><td><label for='firstName'><b>First Name</b></label</td><td><input type='text' id='firstName' name='firstName' value="<?php echo $user->firstName; ?>" style='width:150px;'/></td></tr>
-		<tr><td><label for='lastName'><b>Last Name</b></label</td><td><input type='text' id='lastName' name='lastName' value="<?php echo $user->lastName; ?>" style='width:150px;'/></td></tr>
-		<tr><td><label for='privilegeID'><b>Privilege</b></label</td>
+			<tr><td><label for='loginID'><b>Login ID</b></label></td><td><?php if (!$loginID) { ?><input type='text' id='loginID' name='loginID' value='<?php echo $loginID; ?>' style='width:150px;'/> <?php } else { echo $loginID; } ?></td></tr>
+			<tr><td><label for='firstName'><b>First Name</b></label></td><td><input type='text' id='firstName' name='firstName' value="<?php echo $user->firstName; ?>" style='width:150px;'/></td></tr>
+			<tr><td><label for='lastName'><b>Last Name</b></label></td><td><input type='text' id='lastName' name='lastName' value="<?php echo $user->lastName; ?>" style='width:150px;'/></td></tr>
+			<tr><td><label for='privilegeID'><b>Privilege</b></label></td>
 		<td>
 		<select name='privilegeID' id='privilegeID' style='width:155px'>
 		<option value=''></option>
