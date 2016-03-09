@@ -194,4 +194,5 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 .TB_modal label[for=loginID] {
 	margin-top: 10px !important;
 	display: inline-block;
+    margin-bottom: 10px;
 }
