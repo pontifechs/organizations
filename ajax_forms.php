@@ -624,7 +624,7 @@ switch ($_GET['action']) {
 		<tr>
 			<td><label>CC myself:</label></td>
 			<td>
-				<input type='checkbox' id='ccCreator' name='ccCreator' class='changeInput' checked />
+				<input type='checkbox' id='ccCreator' name='ccCreator' class='changeInput' />
 				<span id='span_error_ccCreator' class='error smallDarkRedText'></span>
 			</td>
 		</tr>
@@ -658,10 +658,10 @@ switch ($_GET['action']) {
 			<td><label>Applies to:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<div>
-					<input type="checkbox" class="issueResources" id="organizationID" name="organizationID" value="<?php echo $organization->organizationID;?>" /> <label for="allResources">Applies to all <?php echo $organization->name; ?> resources.</label>
+					<input type="checkbox" class="issueResources" id="organizationID" name="organizationID" value="<?php echo $organization->organizationID;?>" /> <label for="allResources">Applies to all <?php echo $organization->name; ?> resources</label>
 				</div>
 				<div>
-					<input type="checkbox" class="issueResources" id="otherResources" /><label for="otherResources"> Applies to selected <?php echo $organization->name; ?> resources.</label>
+					<input type="checkbox" class="issueResources" id="otherResources" /><label for="otherResources"> Applies to selected <?php echo $organization->name; ?> resources</label>
 				</div>
 				<select multiple id="resourceIDs" name="resourceIDs[]">
 <?php
