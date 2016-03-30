@@ -1025,16 +1025,16 @@ td#org-title {
 	---*/
 }
 
-#organizationForm table.thickboxTable table.noBorderTable input {
-			color: #FFFFFF;
-			font-family: "Arial", sans-serif;
-			font-size: 11px;
-			font-weight: normal;
-			background: #1b76a9;
-			border: none;
-			padding: 5px 10px;
-			text-transform: capitalize;
-}
+/*#organizationForm table.thickboxTable table.noBorderTable input {
+	color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background: #1b76a9;
+	border: none;
+	padding: 5px 10px;
+	text-transform: capitalize;
+}*/
 
 /*--- Organizations Side Menu Icons ---*/
 
@@ -1272,7 +1272,7 @@ table.thickboxTable .headerText {
 
 /*--- Adjust Add Alias Form Modal Window ---*/
 
-#div_aliasForm input#submitAliasForm {
+/*#div_aliasForm input#submitAliasForm {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1302,11 +1302,11 @@ table.thickboxTable .headerText {
 
 #div_aliasForm input[value=cancel]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Adjust Add Contact Form Modal Window ---*/
 
-#div_contactForm input#submitContactForm {
+/*#div_contactForm input#submitContactForm {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1336,11 +1336,11 @@ table.thickboxTable .headerText {
 
 #div_contactForm input[value=cancel]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Adjust Add Login Form Modal Window ---*/
 
-#div_organizationForm input#submitExternalLoginForm {
+/*#div_organizationForm input#submitExternalLoginForm {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1370,11 +1370,11 @@ table.thickboxTable .headerText {
 
 #div_organizationForm input[value=cancel]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Adjust Add Issue Form Modal Window ---*/
 
-#div_issueForm input#submitIssueLogForm {
+/*#div_issueForm input#submitIssueLogForm {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1405,11 +1405,11 @@ table.thickboxTable .headerText {
 
 #div_issueForm input[value=cancel]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Adjust Add New Organization Form Modal Window ---*/
 
-#div_organizationForm input#submitOrganizationChanges {
+/*#div_organizationForm input#submitOrganizationChanges {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1438,11 +1438,11 @@ table.thickboxTable .headerText {
 
 #div_organizationForm input#organizations-cancel:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Adjust Update User Form Modal Window ---*/
 
-#div_updateForm input[value=Update] {
+/*#div_updateForm input[value=Update] {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1472,11 +1472,11 @@ table.thickboxTable .headerText {
 
 #div_updateForm input[value=cancel]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Add New User Form Modal Window ---*/
 
-#div_updateForm input[value=Add\ New] {
+/*#div_updateForm input[value=Add\ New] {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1491,7 +1491,7 @@ table.thickboxTable .headerText {
 
 #div_updateForm input[value=Add\ New]:hover {
 	cursor: pointer;
-}
+}*/
 
 /*--- Firefox Only ---*/
 
@@ -1511,7 +1511,7 @@ table.thickboxTable .headerText {
 
 /*--- Update User Modal Window (Edit Link) ---*/
 
-#div_updateForm a#updateButton {
+/*#div_updateForm a#updateButton {
 	color: #FFFFFF;
 	font-family: "Arial", sans-serif;
 	font-size: 11px;
@@ -1541,7 +1541,7 @@ table.thickboxTable .headerText {
 
 #div_updateForm a#closeButton:hover {
 	cursor: pointer;
-}
+}*/
 
 #sidebar-link-bottom {
 	padding: 10px;
@@ -1664,7 +1664,7 @@ div#archivedDowntime {
     color: #3D545D;
 }
 
-#newIssueForm input#submitNewResourceIssue {
+/*#newIssueForm input#submitNewResourceIssue {
     color: #FFFFFF;
     font-family: "Arial", sans-serif;
     font-size: 11px;
@@ -1693,7 +1693,7 @@ div#archivedDowntime {
 
 #newIssueForm input[value=cancel]:hover {
     cursor: pointer;
-}
+}*/
 
 a#getCreateContactForm {
 	text-transform: capitalize;
@@ -1761,7 +1761,7 @@ a#getCreateContactForm {
 	color: #3D545D; 
 }
 
-#newDowntimeForm input#submitNewDowntime {
+/*#newDowntimeForm input#submitNewDowntime {
     color: #FFFFFF;
     font-family: "Arial", sans-serif;
     font-size: 11px;
@@ -1790,14 +1790,14 @@ a#getCreateContactForm {
 
 #newDowntimeForm input[value=cancel]:hover {
     cursor: pointer;
-}
+}*/
 
 #newIssueForm .smallDarkRedText {
 	font-size: 85%;
     color: #7a0026;
 }
 
-#newIssueForm input#createContact {
+/*#newIssueForm input#createContact {
     color: #FFFFFF;
     font-family: "Arial", sans-serif;
     font-size: 11px;
@@ -1811,7 +1811,7 @@ a#getCreateContactForm {
 
 #newIssueForm input#createContact:hover {
     cursor: pointer;
-}
+}*/
 
 #inlineContact > div:first-child > .form-element:nth-of-type(2) {
     margin-top: 10px;
@@ -1860,7 +1860,6 @@ div#archivedIssues {
     line-height: 18px;
 }
 
-#archivedIssues a {
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -1888,4 +1887,41 @@ div#archivedDowntime {
 a#archiveddowntimeBtn {
     margin-bottom: 10px !important;
     display: inline-block;
+}
+
+/*--- Consistentcy for Form Buttons ---*/
+
+.submit-button,
+.cancel-button,
+.save-button
+ {
+    color: #FFFFFF;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    background: #1b76a9;
+    border: none;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-left: 8px;
+    min-width: 60px;
+    margin-top: 10px;
+}
+
+.submit-button:hover,
+.cancel-button:hover,
+.save-button {
+    cursor: pointer;
+}
+
+.submit-button {
+    margin-left: 0;
+}
+
+a.submit-button,
+a.cancel-button,
+a.save-button
+ {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
 }

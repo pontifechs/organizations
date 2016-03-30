@@ -151,8 +151,8 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;text-align:left;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;width:60px;'><input type='button' value='<?php echo _("submit");?>' name='submitOrganizationChanges' id ='submitOrganizationChanges'></td>
-					<td style='text-align:left;margin-left:6px;float:left;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()"></td>
+					<td style='width:60px'><input type='button' value='<?php echo _("submit");?>' name='submitOrganizationChanges' id ='submitOrganizationChanges' class='submit-button'></td>
+					<td><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()" class='cancel-button'></td>
 				</tr>
 			</table>
 		</td>
@@ -228,8 +228,8 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;text-align:left;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;width:60px;'><input type='button' value='<?php echo _("submit");?>' name='submitAliasForm' id ='submitAliasForm'></td>
-					<td style='text-align:right'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()"></td>
+					<td style='width:60px'><input type='button' value='<?php echo _("submit");?>' name='submitAliasForm' id ='submitAliasForm' class='cancel-button'></td>
+					<td><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()" class='cancel-button'></td>
 				</tr>
 			</table>
 		</td>
@@ -422,8 +422,8 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;width:60px;'><input type='button' value='<?php echo _("submit");?>' name='submitContactForm' id ='submitContactForm'></td>
-					<td style='text-align:right;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()"></td>
+					<td style='width:60px'><input type='button' value='<?php echo _("submit");?>' name='submitContactForm' id ='submitContactForm' class='submit-button'></td>
+					<td><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()" class='cancel-button'></td>
 				</tr>
 			</table>
 		</td>
@@ -526,8 +526,8 @@ switch ($_GET['action']) {
 		<td style="padding-top:8px;padding-right:8px;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;width:60px;'><input type='button' value='<?php echo _("submit");?>' name='submitExternalLoginForm' id ='submitExternalLoginForm'></td>
-					<td style='text-align:right;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()"></td>
+					<td style='width:60px'><input type='button' value='<?php echo _("submit");?>' name='submitExternalLoginForm' id ='submitExternalLoginForm' class='submit-button'></td>
+					<td><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()" class='cancel-button'></td>
 				</tr>
 			</table>
 		</td>
@@ -566,8 +566,8 @@ switch ($_GET['action']) {
 				</table>
 				<table class='noBorderTable' style='width:125px;'>
 					<tr>
-						<td class="text-left"><input type="button" value="submit" name="submitCloseResourceIssue" id="submitCloseResourceIssue"></td>
-						<td class='text-right'><input type='button' value='cancel' onclick="tb_remove();"></td>
+						<td style='width:60px'><input type="button" value="submit" name="submitCloseResourceIssue" id="submitCloseResourceIssue" class='submit-button'></td>
+						<td><input type='button' value='cancel' onclick="tb_remove();" class='cancel-button'></td>
 					</tr>
 				</table>
 
@@ -685,8 +685,8 @@ switch ($_GET['action']) {
 
 	<table class='noBorderTable' style='width:125px;'>
 		<tr>
-			<td style='text-align:left'><input type='button' value='submit' name='submitNewResourceIssue' id='submitNewResourceIssue'></td>
-			<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove();"></td>
+			<td style='width:60px;padding:0;'><input type='button' value='submit' name='submitNewResourceIssue' id='submitNewResourceIssue' class='submit-button'></td>
+			<td style='padding:0;'><input type='button' value='cancel' onclick="tb_remove();" class='cancel-button'></td>
 		</tr>
 	</table>
 
@@ -774,8 +774,8 @@ if ($issues) {
 
 	<table class='noBorderTable' style='width:125px;'>
 		<tr>
-			<td style='text-align:left'><input type='button' value='submit' name='submitNewDowntime' id='submitNewDowntime'></td>
-			<td style='text-align:right'><input type='button' value='cancel' onclick="tb_remove();"></td>
+			<td style='width:60px;padding:0;'><input type='button' value='submit' name='submitNewDowntime' id='submitNewDowntime' class='submit-button'></td>
+			<td style='padding:0;'><input type='button' value='cancel' onclick="tb_remove();" class='cancel-button'></td>
 		</tr>
 	</table>
 
@@ -861,8 +861,8 @@ if ($issues) {
 		<td style="padding-top:8px;padding-right:8px;">
 			<table class='noBorderTable' style='width:100%;'>
 				<tr>
-					<td style='text-align:left;width:60px;'><input type='button' value='<?php echo _("submit");?>' name='submitIssueLogForm' id ='submitIssueLogForm'></td>
-					<td style='text-align:right;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()"></td>
+					<td style='width:60px'><input type='button' value='<?php echo _("submit");?>' name='submitIssueLogForm' id ='submitIssueLogForm' class='submit-button'></td>
+					<td><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove()" class='cancel-button'></td>
 				</tr>
 			</table>
 		</td>
@@ -930,7 +930,7 @@ if ($issues) {
 		<div id='div_updateForm'>
 		<table class="thickboxTable" style="background-image:url('images/title.gif');background-repeat:no-repeat;width:200px;">
 		<tr>
-		<td colspan='3'><span class='headerText'><?php _("Update");?></span><br /><span id='span_errors' style='color:#F00;'></span><br /></td>
+		<td colspan='3'><span class='headerText'><?php echo _("Update");?></span><br /><span id='span_errors' style='color:#F00;'></span><br /></td>
 		</tr>
 		<tr>
 
@@ -940,13 +940,13 @@ if ($issues) {
 		<td>
 		<?php
 
-		echo "<input type='text' id='updateVal' name='updateVal' value='" . $instance->shortName . "' style='width:190px;'/></td><td><a href='javascript:updateData(\"" . $className . "\", \"" . $updateId . "\");' id='updateButton'>"._("update")."</a>";
+		echo "<input type='text' id='updateVal' name='updateVal' value='" . $instance->shortName . "' style='width:190px;'/></td><td><a href='javascript:updateData(\"" . $className . "\", \"" . $updateId . "\");' id='updateButton' class='submit-button'>"._("update")."</a>";
 
 		?>
 
 
 		</td>
-		<td colspan='2'><p><a href='#' onclick='window.parent.tb_remove(); return false' id='closeButton'><?php echo _("close");?></a></td>
+		<td colspan='2'><p><a href='#' onclick='window.parent.tb_remove(); return false' id='closeButton' class='cancel-button'><?php echo _("close");?></a></td>
 		</tr>
 		</table>
 		</div>
@@ -1048,7 +1048,7 @@ if ($issues) {
 		<tr><td colspan='2'><span class='headerText'><?php echo $update._("User"); ?></span><br /><br /></td></tr>
             <tr><td><label for='loginID'><b>Login ID</b></label></td><td><?php if (!$loginID) { ?><input type='text' id='loginID' name='loginID' value='<?php echo $loginID; ?>' style='width:150px;'/> <?php } else { echo $loginID; } ?></td></tr>
             <tr><td><label for='firstName'><b><?php echo _("First Name");?></b></label></td><td><input type='text' id='firstName' name='firstName' value="<?php echo $user->firstName; ?>" style='width:150px;'/></td></tr>
-            <tr><td><label for='lastName'><b><?php echo_("Last Name");?></b></label></td><td><input type='text' id='lastName' name='lastName' value="<?php echo $user->lastName; ?>" style='width:150px;'/></td></tr>
+            <tr><td><label for='lastName'><b><?php echo _("Last Name");?></b></label></td><td><input type='text' id='lastName' name='lastName' value="<?php echo $user->lastName; ?>" style='width:150px;'/></td></tr>
             <tr><td><label for='privilegeID'><b><?php echo _("Privilege");?></b></label></td>
 		<td>
 		<select name='privilegeID' id='privilegeID' style='width:155px'>
@@ -1071,8 +1071,8 @@ if ($issues) {
 
 
 		<tr>
-		<td style="padding-top:18px;width:60px;"><input type='button' value='<?php echo $update; ?>' onclick='javascript:window.parent.submitUserData("<?php echo $loginID; ?>");'></td>
-		<td style="padding-top:18px;padding-right:8px;text-align:right;"><input type='button' value='<?php echo _("cancel");?>' onclick="window.parent.tb_remove(); return false"></td>
+		<td style='width:60px'><input type='button' value='<?php echo $update; ?>' onclick='javascript:window.parent.submitUserData("<?php echo $loginID; ?>");' class='submit-button' /></td>
+		<td><input type='button' value='<?php echo _("cancel");?>' onclick="window.parent.tb_remove(); return false" class='cancel-button' /></td>
 		</tr>
 		</table>
 		</div>
