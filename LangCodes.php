@@ -14,7 +14,7 @@ class LangCodes{
     }
     public function getNameLang($code_lang){
         $name_lang=array(
-        'fr'=>_('French'),
+        'fr'=>_('Français'),
         'en'=>_('English')
         );
         return $name_lang[$code_lang];
