@@ -172,7 +172,7 @@ ul.tabs li{
 	display: table-cell;
 	float: left;
 	position: relative;
-	width: 150px;
+	width: 166px;
 	height: 40px;
 }
 
@@ -1583,8 +1583,11 @@ td#setLanguage {
 
 select#lang {
     border: none;
-    margin-left: 10px;
+    margin-left: 6px;
     background-color: #fff;
+    position: relative;
+    top: 3px;
+    font-size: 12px;
 }
 
 /*--- Issues Section ---*/
@@ -1924,4 +1927,9 @@ a.save-button
  {
     color: #FFFFFF !important;
     text-decoration: none !important;
+}
+
+span#divider {
+	position: relative;
+	top: 3px;
 }
