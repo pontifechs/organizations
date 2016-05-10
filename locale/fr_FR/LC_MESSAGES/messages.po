@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-10 12:33-0600\n"
-"PO-Revision-Date: 2016-05-10 12:39-0600\n"
+"POT-Creation-Date: 2016-05-10 15:00-0600\n"
+"PO-Revision-Date: 2016-05-10 15:01-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -994,7 +994,7 @@ msgid "Cancel"
 msgstr "Annuler"
 
 #: templates/header.php:260
-msgid "Usage Staistics"
+msgid "Usage Statistics"
 msgstr "Statistiques d'utilisation"
 
 #: templates/header.php:265
@@ -1008,6 +1008,9 @@ msgid ""
 msgstr ""
 "La connexion ne fonctionne pas. Vérifiez les fichiers .htaccess et la valeur "
 "de remoteAuthVariableName indiquée dans le fichier /admin/configuration.ini"
+
+#~ msgid "Usage Staistics"
+#~ msgstr "Statistiques d'utilisation"
 
 #~ msgid "French"
 #~ msgstr "Français"
