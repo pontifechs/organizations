@@ -158,27 +158,67 @@ $coralURL = $util->getCORALURL();
 
 <?php if ($user->isAdmin()){ ?>
 
-<a href='index.php'><img src="images/menu/<?php echo $http_lang?>/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/<?php echo $http_lang?>/menu-home-over.gif" class="rollover" /></a>
+    <a href='index.php'>
+        <div class="main-menu-link <?php if ($currentPage == 'index.php') { echo "active"; } ?>">
+            <img src="images/menu/icon-home.png" />
+            <span><?php echo _("Home"); ?></span>
+        </div>
+    </a>
 
-<img src='images/menu/menu-bar.gif'>
+    <a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'>
+        <div class="main-menu-link">
+            <img src="images/menu/icon-new-org.png" />
+            <span><?php echo _("New Organization"); ?></span>
+        </div>
+    </a>
 
-<a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/<?php echo $http_lang?>/menu-neworganization.gif' hover="images/menu/<?php echo $http_lang?>/menu-neworganization-over.gif" class="rollover"></a>
 
-<img src='images/menu/menu-bar.gif'>
-
-<a href='admin.php'><img src='images/menu/<?php echo $http_lang?>/menu-admin<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/<?php echo $http_lang?>/menu-admin-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+    <a href='admin.php'>
+        <div class="main-menu-link <?php if ($currentPage == 'admin.php') { echo "active"; } ?>">
+            <img src="images/menu/icon-admin.png" />
+            <span><?php echo _("Admin"); ?></span>
+        </div>
+    </a>   
 
 <?php }else if ($user->canEdit()){?>
 
-<a href='index.php'><img src="images/menu/<?php echo $http_lang?>/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/<?php echo $http_lang?>/menu-home-over.gif" class="rollover" /></a>
+    <a href='index.php'>
+        <div class="main-menu-link <?php if ($currentPage == 'index.php') { echo "active"; } ?>">
+            <img src="images/menu/icon-home.png" />
+            <span><?php echo _("Home"); ?></span>
+        </div>
+    </a>
 
-<img src='images/menu/menu-bar.gif'>
-
-<a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/<?php echo $http_lang?>/menu-neworganization.gif' hover="images/menu/<?php echo $http_lang?>/menu-neworganization-over.gif" class="rollover" id="menu-last" /></a><img src='images/menu/menu-end.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+    <a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'>
+        <div class="main-menu-link">
+            <img src="images/menu/icon-new-org.png" />
+            <span><?php echo _("New Organization"); ?></span>
+        </div>
+    </a>
 
 <?php }else{ ?>
 
-<a href='index.php'><img src="images/menu/<?php echo $http_lang?>/menu-home<?php if ($currentPage == 'index.php') { echo "-on"; } ?>.gif" hover="images/menu/<?php echo $http_lang?>/menu-home-over.gif" class="rollover" /></a><img src='images/menu/menu-bar.gif'><a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'><img src='images/menu/<?php echo $http_lang?>/menu-neworganization.gif' hover="images/menu/<?php echo $http_lang?>/menu-neworganization-over.gif" class="rollover"></a><img src='images/menu/menu-bar.gif'><a href='admin.php'><img src='images/menu/<?php echo $http_lang?>/menu-admin<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/<?php echo $http_lang?>/menu-admin-over.gif" id="menu-last" class="rollover" /></a><img src='images/menu/menu-end<?php if ($currentPage == 'admin.php') { echo "-on"; } ?>.gif' hover="images/menu/menu-end-over.gif" id="menu-end" />
+    <a href='index.php'>
+        <div class="main-menu-link <?php if ($currentPage == 'index.php') { echo "active"; } ?>">
+            <img src="images/menu/icon-home.png" />
+            <span><?php echo _("Home"); ?></span>
+        </div>
+    </a>
+
+    <a href='ajax_forms.php?action=getOrganizationForm&height=364&width=345&modal=true' class='thickbox' id='newLicense'>
+        <div class="main-menu-link">
+            <img src="images/menu/icon-new-org.png" />
+            <span><?php echo _("New Organization"); ?></span>
+        </div>
+    </a>
+
+
+    <a href='admin.php'>
+        <div class="main-menu-link <?php if ($currentPage == 'admin.php') { echo "active"; } ?>">
+            <img src="images/menu/icon-admin.png" />
+            <span><?php echo _("Admin"); ?></span>
+        </div>
+    </a>  
 
 <?php } ?>
 </td>
@@ -192,43 +232,43 @@ if ((file_exists($util->getCORALPath() . "index.php")) || ($config->settings->li
 
 	?>
 
-			<div style='text-align:left;'>
-					<ul class="tabs">
-					<li style="background: url('images/change/<?php echo $http_lang?>/coral-change.gif') no-repeat right;">&nbsp;
-								<ul class="coraldropdown">
-										<?php if (file_exists($util->getCORALPath() . "index.php")) {?>
-										<li><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/coral-main.png'></a></li>
-										<?php
-										}
-										if ($config->settings->licensingModule == 'Y') {
-										?>
-										<li><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/coral-licensing.png'></a></li>
-										<?php
-										}
-										if ($config->settings->resourcesModule == 'Y') {
-										?>
-										<li><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/coral-resources.png'></a></li>
-										<?php
-										}
-										if ($config->settings->cancellationModule == 'Y') {
-										?>
-										<li><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/coral-cancellation.png'></a></li>
-										<?php
-										}
-										if ($config->settings->usageModule == 'Y') {
-										?>
-										<li><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/coral-usage.png'></a></li>
-										<?php
-										}
-										if ($config->settings->managementModule == 'Y') {
-										?>
-										<li><a href="<?php echo $coralURL; ?>management/" target='_blank'><img src='images/change/coral-management.png'></a></li>
-										<?php } ?>
-								</ul>
-					</li>
-					</ul>
-
+	<div style='text-align:left;'>
+		<ul class="tabs">
+			<li id="change-mod-menu"><img src="images/change/icon-change-mod.png" /><span><?php echo _("Change Module"); ?></span><i class="fa fa-chevron-down"></i>
+				<ul class="coraldropdown">
+					<?php if (file_exists($util->getCORALPath() . "index.php")) {?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>" target='_blank'><img src='images/change/icon-mod-main.png'><span><?php echo _("Main Menu"); ?></span></a></li>
+					<?php
+					}
+					if ($config->settings->licensingModule == 'Y') {
+					?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>licensing/" target='_blank'><img src='images/change/icon-mod-licensing.png'><span><?php echo _("Licensing"); ?></span></a></li>
+					<?php
+					}
+					if ($config->settings->resourcesModule == 'Y') {
+					?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>resources/" target='_blank'><img src='images/change/icon-mod-resources.png'><span><?php echo _("Resources"); ?></span></a></li>
+					<?php
+					}
+					if ($config->settings->cancellationModule == 'Y') {
+					?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>cancellation/" target='_blank'><img src='images/change/icon-mod-cancellation.png'></a><span><?php echo _("Cancel"); ?></span></li>
+					<?php
+					}
+					if ($config->settings->usageModule == 'Y') {
+					?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>usage/" target='_blank'><img src='images/change/icon-mod-usage.png'><span><?php echo _("Usage Staistics"); ?></span></a></li>
+					<?php
+					}
+					if ($config->settings->managementModule == 'Y') {
+					?>
+					<li class="change-mod-item"><a href="<?php echo $coralURL; ?>management/" target='_blank'><img src='images/change/icon-mod-management.png'><span><?php echo _("Management"); ?></span></a></li>
+					<?php } ?>
+				</ul>
+			</li>
+		</ul>
 	</div>
+
 	<?php
 
 } else {
