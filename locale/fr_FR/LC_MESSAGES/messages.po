@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-05-11 13:04-0600\n"
-"PO-Revision-Date: 2016-05-11 13:05-0600\n"
+"PO-Revision-Date: 2016-05-11 13:13-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -955,7 +955,7 @@ msgstr "réessayez à nouveau"
 
 #: templates/header.php:98
 msgid "Organizations"
-msgstr "Organizations"
+msgstr "Organisations"
 
 #: templates/header.php:99
 msgid "Powered by"
