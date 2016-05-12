@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-11 13:04-0600\n"
-"PO-Revision-Date: 2016-05-11 13:55-0600\n"
+"POT-Creation-Date: 2016-05-12 14:17-0600\n"
+"PO-Revision-Date: 2016-05-12 14:18-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -808,8 +808,8 @@ msgstr "L'organisation a été supprimée avec succès."
 msgid "User successfully saved."
 msgstr "L'utilisateur a été enregistré avec succès."
 
-#: index.php:26 templates/header.php:172 templates/header.php:196
-#: templates/header.php:212
+#: index.php:26 templates/header.php:173 templates/header.php:197
+#: templates/header.php:213
 msgid "Home"
 msgstr "Accueil"
 
@@ -939,7 +939,7 @@ msgstr "Ajouté le"
 msgid "Issue Date"
 msgstr "Date de l'incident"
 
-#: templates/header.php:78
+#: templates/header.php:79
 msgid ""
 "JavaScript must be enabled in order for you to use CORAL. However, it seems "
 "JavaScript is either disabled or not supported by your browser. To use "
@@ -949,55 +949,67 @@ msgstr ""
 "ou n'est pas supporté par votre navigateur web. Pour utiliser CORAL, activez "
 "JavaScript en modifiant les options de votre navigateur web, puis "
 
-#: templates/header.php:78
+#: templates/header.php:79
 msgid "try again"
 msgstr "réessayez à nouveau"
 
-#: templates/header.php:98
+#: templates/header.php:99
 msgid "Organizations"
 msgstr "Organisations"
 
-#: templates/header.php:99
+#: templates/header.php:100
 msgid "Powered by"
 msgstr "Alimenté par"
 
-#: templates/header.php:133
+#: templates/header.php:106
+msgid "Hello"
+msgstr "Bonjour"
+
+#: templates/header.php:116
+msgid "logout"
+msgstr "Se déconnecter"
+
+#: templates/header.php:116
+msgid "Help"
+msgstr "Aide"
+
+#: templates/header.php:134
 msgid "Invalid translation route!"
 msgstr "Chemin d'accès aux traductions invalide !"
 
-#: templates/header.php:179 templates/header.php:203 templates/header.php:219
+#: templates/header.php:180 templates/header.php:204 templates/header.php:220
 msgid "New Organization"
 msgstr "Nouvelle organisation"
 
-#: templates/header.php:187 templates/header.php:227
+#: templates/header.php:188 templates/header.php:228
 msgid "Admin"
 msgstr "Admin"
 
-#: templates/header.php:245
+#: templates/header.php:246
 msgid "Change Module"
 msgstr "Changer de module"
 
-#: templates/header.php:248
+#: templates/header.php:249
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: templates/header.php:253
+#: templates/header.php:254
 msgid "Licensing"
 msgstr "Licences"
 
-#: templates/header.php:258
+#: templates/header.php:259
 msgid "Resources"
 msgstr "Ressources"
 
-#: templates/header.php:263
+#: templates/header.php:264
 msgid "Cancel"
 msgstr "Annuler"
 
-#: templates/header.php:268
+#: templates/header.php:269
 msgid "Usage Statistics"
 msgstr "Statistiques d'utilisation"
 
-#: templates/header.php:273
+#: templates/header.php:274
 msgid "Management"
 msgstr "Gestion"
 
@@ -1011,9 +1023,6 @@ msgstr ""
 
 #~ msgid "Hello, "
 #~ msgstr "Bonjour, "
-
-#~ msgid "logout"
-#~ msgstr "Se déconnecter"
 
 #~ msgid "Usage Staistics"
 #~ msgstr "Statistiques d'utilisation"
