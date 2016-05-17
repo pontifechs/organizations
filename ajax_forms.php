@@ -588,19 +588,19 @@ switch ($_GET['action']) {
 	<table class="thickboxTable">
 		<tr>
 			<td colspan="2">
-				<h1> Report New Problem</h1>
-				<span class='error smallDarkRedText'>* required fields</span>
+				<h1> <?php echo _("Report New Problem");?></h1>
+				<span class='error smallDarkRedText'><?php echo _("* required fields");?></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Organization:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
+			<td><label><?php echo _("Organization:");?>&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<p><?php echo $organization->name; ?></p>
 				<span id='error span_error_organizationId' class='smallDarkRedText'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Contact:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
+			<td><label><?php echo _("Contact:");?>&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<select multiple style="min-height: 60px;" type='text' id='contactIDs' name='contactIDs[]'>
 <?php 
@@ -617,51 +617,51 @@ switch ($_GET['action']) {
 		<tr>
 			<td></td>
 			<td>
-				<a id="getCreateContactForm" href="#">add contact</a>
+				<a id="getCreateContactForm" href="#"><?php echo _("add contact");?></a>
 				<div id="inlineContact"></div>
 			</td>
 		</tr>
 		<tr>
-			<td><label>CC myself:</label></td>
+			<td><label><?php echo _("CC myself:");?></label></td>
 			<td>
 				<input type='checkbox' id='ccCreator' name='ccCreator' class='changeInput' />
 				<span id='span_error_ccCreator' class='error smallDarkRedText'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>CC:</label></td>
+			<td><label><?php echo _("CC:");?></label></td>
 			<td>
 				<input type="text" id="inputEmail" name="inputEmail" />
 				<input type="button" id="addEmail" name="addEmail" value="Add" />
 				<p>
-					Current CCs: <span id="currentEmails"></span>
+					<?php echo _("Current CCs: ");?><span id="currentEmails"></span>
 				</p>
 				<input type="hidden" id='ccEmails' name='ccEmails' value='' class='changeInput' />
 				<span id='span_error_contactIDs' class='error smallDarkRedText'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Subject:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
+			<td><label><?php echo _("Subject:");?>&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<input type='text' id='subjectText' name='issue[subjectText]' value='' class='changeInput' />
 				<span id='span_error_subjectText' class='error smallDarkRedText'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Body:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
+			<td><label><?php echo _("Body:");?>&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<textarea id='bodyText' name='issue[bodyText]' value='' />
 				<span id='span_error_bodyText' class='error smallDarkRedText'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Applies to:&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
+			<td><label><?php echo _("Applies to:");?>&nbsp;&nbsp;<span class='bigDarkRedText'>*</span></label></td>
 			<td>
 				<div>
-					<input type="checkbox" class="issueResources" id="organizationID" name="organizationID" value="<?php echo $organization->organizationID;?>" /> <label for="allResources">Applies to all <?php echo $organization->name; ?> resources</label>
+					<input type="checkbox" class="issueResources" id="organizationID" name="organizationID" value="<?php echo $organization->organizationID;?>" /> <label for="allResources"><?php echo _("Applies to all ");?><?php echo $organization->name; ?> <?php echo _("resources");?></label>
 				</div>
 				<div>
-					<input type="checkbox" class="issueResources" id="otherResources" /><label for="otherResources"> Applies to selected <?php echo $organization->name; ?> resources</label>
+					<input type="checkbox" class="issueResources" id="otherResources" /><label for="otherResources"> <?php echo _("Applies to selected ");?><?php echo $organization->name; ?> <?php echo _("resources");?></label>
 				</div>
 				<select multiple id="resourceIDs" name="resourceIDs[]">
 <?php
@@ -677,7 +677,7 @@ switch ($_GET['action']) {
 		</tr>
 	</table>
 
-	<p> Send me a reminder every 
+	<p> <?php echo _("Send me a reminder every");?> 
 		<select name="issue[reminderInterval]">
 			<?php for ($i = 1; $i <= 31; $i++) echo "<option".(($i==7) ? ' selected':'').">{$i}</option>"; ?>
 		</select> day(s) 
@@ -685,8 +685,8 @@ switch ($_GET['action']) {
 
 	<table class='noBorderTable' style='width:125px;'>
 		<tr>
-			<td style='width:60px;padding:0;'><input type='button' value='submit' name='submitNewResourceIssue' id='submitNewResourceIssue' class='submit-button'></td>
-			<td style='padding:0;'><input type='button' value='cancel' onclick="tb_remove();" class='cancel-button'></td>
+			<td style='width:60px;padding:0;'><input type='button' value='<?php echo _("submit");?>' name='submitNewResourceIssue' id='submitNewResourceIssue' class='submit-button'></td>
+			<td style='padding:0;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove();" class='cancel-button'></td>
 		</tr>
 	</table>
 
@@ -716,25 +716,25 @@ switch ($_GET['action']) {
 	<table class="thickboxTable" style="width:98%;background-image:url('images/title.gif');background-repeat:no-repeat;">
 		<tr>
 			<td colspan="2">
-				<h1> Resource Downtime Report</h1>
+				<h1> <?php echo _("Resource Downtime Report");?></h1>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Downtime Start:</label></td>
+			<td><label><?php echo _("Downtime Start:");?></label></td>
 			<td>
 				<input value="<?php echo $defaultStart; ?>" type="datetime-local" name="startDate" id="startDate" />
 				<span id='span_error_startDate' class='smallDarkRedText addDowntimeError'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Downtime Resolution:</label></td>
+			<td><label><?php echo _("Downtime Resolution:");?></label></td>
 			<td>
 				<input value="<?php echo $defaultEnd; ?>"  type="datetime-local" name="endDate" id="endDate" />
 				<span id='span_error_endDate' class='smallDarkRedText addDowntimeError'></span>
 			</td>
 		</tr>
 		<tr>
-			<td><label>Problem Type:</label></td>
+			<td><label><?php echo _("Problem Type:");?></label></td>
 			<td>
 				<select class="downtimeType" name="downtimeType">
 <?php
@@ -749,7 +749,7 @@ switch ($_GET['action']) {
 if ($issues) {
 ?>
 		<tr>
-			<td><label>Link to open issue:</label></td>
+			<td><label><?php echo _("Link to open issue:");?></label></td>
 			<td>
 				<select class="issueID" name="issueID">
 					<option value="">none</option>
@@ -765,7 +765,7 @@ if ($issues) {
 }
 ?>
 		<tr>
-			<td><label>Note:</label></td>
+			<td><label><?php echo _("Note:");?></label></td>
 			<td>
 				<textarea name="note"></textarea>
 			</td>
@@ -774,8 +774,8 @@ if ($issues) {
 
 	<table class='noBorderTable' style='width:125px;'>
 		<tr>
-			<td style='width:60px;padding:0;'><input type='button' value='submit' name='submitNewDowntime' id='submitNewDowntime' class='submit-button'></td>
-			<td style='padding:0;'><input type='button' value='cancel' onclick="tb_remove();" class='cancel-button'></td>
+			<td style='width:60px;padding:0;'><input type='button' value='<?php echo _("submit");?>' name='submitNewDowntime' id='submitNewDowntime' class='submit-button'></td>
+			<td style='padding:0;'><input type='button' value='<?php echo _("cancel");?>' onclick="tb_remove();" class='cancel-button'></td>
 		</tr>
 	</table>
 

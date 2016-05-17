@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-12 14:17-0600\n"
-"PO-Revision-Date: 2016-05-12 14:18-0600\n"
+"POT-Creation-Date: 2016-05-17 11:32-0600\n"
+"PO-Revision-Date: 2016-05-17 11:40-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -368,12 +368,12 @@ msgid "Notes:"
 msgstr "Remarques :"
 
 #: ajax_forms.php:154 ajax_forms.php:231 ajax_forms.php:425 ajax_forms.php:529
-#: ajax_forms.php:864
+#: ajax_forms.php:688 ajax_forms.php:777 ajax_forms.php:864
 msgid "submit"
 msgstr "Valider"
 
 #: ajax_forms.php:155 ajax_forms.php:232 ajax_forms.php:426 ajax_forms.php:530
-#: ajax_forms.php:865 ajax_forms.php:1075
+#: ajax_forms.php:689 ajax_forms.php:778 ajax_forms.php:865 ajax_forms.php:1075
 msgid "cancel"
 msgstr "Annuler"
 
@@ -452,6 +452,90 @@ msgstr "Nom d'utilisateur :"
 #: ajax_forms.php:512 ajax_htmldata.php:593 summary.php:481
 msgid "Password:"
 msgstr "Mot de passe :"
+
+#: ajax_forms.php:591
+msgid "Report New Problem"
+msgstr "Signaler un nouveau problème"
+
+#: ajax_forms.php:592
+msgid "* required fields"
+msgstr "* champs obligatoires"
+
+#: ajax_forms.php:596
+msgid "Organization:"
+msgstr "Organisation:"
+
+#: ajax_forms.php:603
+msgid "Contact:"
+msgstr "Contact:"
+
+#: ajax_forms.php:620 orgDetail.php:205
+msgid "add contact"
+msgstr "Ajouter un contact"
+
+#: ajax_forms.php:625
+msgid "CC myself:"
+msgstr "Me copier dans l'email:"
+
+#: ajax_forms.php:632
+msgid "CC:"
+msgstr "CC:"
+
+#: ajax_forms.php:637
+msgid "Current CCs: "
+msgstr "Adresses emails ajoutées en CC:"
+
+#: ajax_forms.php:644
+msgid "Subject:"
+msgstr "Objet:"
+
+#: ajax_forms.php:651
+msgid "Body:"
+msgstr "Contenu du message:"
+
+#: ajax_forms.php:658
+msgid "Applies to:"
+msgstr "S'applique à:"
+
+#: ajax_forms.php:661
+msgid "Applies to all "
+msgstr "S'applique à tous"
+
+#: ajax_forms.php:661 ajax_forms.php:664
+msgid "resources"
+msgstr "ressources"
+
+#: ajax_forms.php:664
+msgid "Applies to selected "
+msgstr "S'applique aux personnes sélectionnées"
+
+#: ajax_forms.php:680
+msgid "Send me a reminder every"
+msgstr "Envoyer-moi un rappel tous les"
+
+#: ajax_forms.php:719
+msgid "Resource Downtime Report"
+msgstr "Rapport d'indisponibilité de la ressource"
+
+#: ajax_forms.php:723
+msgid "Downtime Start:"
+msgstr "Début du temps d'indisponibilité:"
+
+#: ajax_forms.php:730
+msgid "Downtime Resolution:"
+msgstr "Résolution de l'indisponibilité:"
+
+#: ajax_forms.php:737
+msgid "Problem Type:"
+msgstr "Type de problème:"
+
+#: ajax_forms.php:752
+msgid "Link to open issue:"
+msgstr "Lien pour ouvrir l'incident:"
+
+#: ajax_forms.php:768
+msgid "Note:"
+msgstr "Remarque :"
 
 #: ajax_forms.php:816
 msgid "Update Issue"
@@ -653,6 +737,38 @@ msgstr "Aucune connexion externe ajoutée"
 #: ajax_htmldata.php:627
 msgid "add new external login"
 msgstr "Ajouter une nouvelle connexion externe"
+
+#: ajax_htmldata.php:644
+msgid "Issues/Problems"
+msgstr "Incidents/problèmes"
+
+#: ajax_htmldata.php:647
+msgid "report new issue"
+msgstr "Signaler un nouvel incident"
+
+#: ajax_htmldata.php:651
+msgid "view open issues"
+msgstr "Voir les incidents ouverts"
+
+#: ajax_htmldata.php:658
+msgid "view archived issues"
+msgstr "Voir les incidents archivés"
+
+#: ajax_htmldata.php:667
+msgid "Downtime"
+msgstr "Temps d'indisponibilité"
+
+#: ajax_htmldata.php:670
+msgid "report new Downtime"
+msgstr "Signaler un nouveau temps d'indisponibilité"
+
+#: ajax_htmldata.php:674
+msgid "view current/upcoming downtime"
+msgstr "Voir les temps d'indisponibilité actuels/à venir"
+
+#: ajax_htmldata.php:681
+msgid "view archived downtime"
+msgstr "Voir le temps d'indisponibilité archivé"
 
 #: ajax_htmldata.php:753
 msgid "Added"
@@ -902,10 +1018,6 @@ msgstr " fiche"
 #: orgDetail.php:281 orgDetail.php:313
 msgid " records"
 msgstr " fiches"
-
-#: orgDetail.php:205
-msgid "add contact"
-msgstr "Ajouter un contact"
 
 #: orgDetail.php:336 summary.php:643
 msgid "invalid organization"
