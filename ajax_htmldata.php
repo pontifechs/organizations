@@ -697,7 +697,7 @@ switch ($_GET['action']) {
 				echo generateIssueHTML($issue,array(array("name"=>$organization->name,"id"=>$organization->organizationID,"entityType"=>1)));
 			}
 		} else {
-			echo "<br><p>There are no organization level issues.</p><br>";
+			echo "<br><p>" . _("There are no organization level issues.") . "</p><br>";
 		}
 
 	break;
@@ -712,7 +712,7 @@ switch ($_GET['action']) {
 				echo generateDowntimeHTML($downtime,array(array("name"=>$organization->name,"id"=>$organization->organizationID,"entityType"=>1)));
 			}
 		} else {
-			echo "<br><p>There are no organization level downtimes.</p><br>";
+			echo "<br><p>" . _("There are no organization level downtimes.") . "</p><br>";
 		}
 	break;
     case 'getIssueDetails':

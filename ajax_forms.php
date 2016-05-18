@@ -680,7 +680,7 @@ switch ($_GET['action']) {
 	<p> <?php echo _("Send me a reminder every");?> 
 		<select name="issue[reminderInterval]">
 			<?php for ($i = 1; $i <= 31; $i++) echo "<option".(($i==7) ? ' selected':'').">{$i}</option>"; ?>
-		</select> day(s) 
+		</select><?php echo _(" day(s)");?> 
 	</p>
 
 	<table class='noBorderTable' style='width:125px;'>

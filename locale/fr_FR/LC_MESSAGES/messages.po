@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-17 11:32-0600\n"
-"PO-Revision-Date: 2016-05-17 11:40-0600\n"
+"POT-Creation-Date: 2016-05-18 08:30-0600\n"
+"PO-Revision-Date: 2016-05-18 08:31-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -513,6 +513,10 @@ msgstr "S'applique aux personnes sélectionnées"
 msgid "Send me a reminder every"
 msgstr "Envoyer-moi un rappel tous les"
 
+#: ajax_forms.php:683
+msgid " day(s)"
+msgstr "jour(s)"
+
 #: ajax_forms.php:719
 msgid "Resource Downtime Report"
 msgstr "Rapport d'indisponibilité de la ressource"
@@ -769,6 +773,14 @@ msgstr "Voir les temps d'indisponibilité actuels/à venir"
 #: ajax_htmldata.php:681
 msgid "view archived downtime"
 msgstr "Voir le temps d'indisponibilité archivé"
+
+#: ajax_htmldata.php:700
+msgid "There are no organization level issues."
+msgstr "Il n'y a aucun incident au niveau organisationnel."
+
+#: ajax_htmldata.php:715
+msgid "There are no organization level downtimes."
+msgstr "Il n'y aucun temps d'indisponibilité au niveau organisationnel."
 
 #: ajax_htmldata.php:753
 msgid "Added"
