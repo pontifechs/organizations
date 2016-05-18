@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-18 08:37-0600\n"
-"PO-Revision-Date: 2016-05-18 08:37-0600\n"
+"POT-Creation-Date: 2016-05-18 09:32-0600\n"
+"PO-Revision-Date: 2016-05-18 09:33-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -480,6 +480,10 @@ msgstr "Me copier dans l'email:"
 #: ajax_forms.php:632
 msgid "CC:"
 msgstr "CC:"
+
+#: ajax_forms.php:635
+msgid "Add"
+msgstr "Ajouter"
 
 #: ajax_forms.php:637
 msgid "Current CCs: "
