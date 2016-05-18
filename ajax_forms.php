@@ -632,7 +632,7 @@ switch ($_GET['action']) {
 			<td><label><?php echo _("CC:");?></label></td>
 			<td>
 				<input type="text" id="inputEmail" name="inputEmail" />
-				<input type="button" id="addEmail" name="addEmail" value="Add" />
+				<input type="button" id="addEmail" name="addEmail" value="<?php echo _('Add');?>" />
 				<p>
 					<?php echo _("Current CCs: ");?><span id="currentEmails"></span>
 				</p>
