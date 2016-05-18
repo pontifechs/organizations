@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-18 08:30-0600\n"
-"PO-Revision-Date: 2016-05-18 08:31-0600\n"
+"POT-Creation-Date: 2016-05-18 08:37-0600\n"
+"PO-Revision-Date: 2016-05-18 08:37-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -514,7 +514,7 @@ msgid "Send me a reminder every"
 msgstr "Envoyer-moi un rappel tous les"
 
 #: ajax_forms.php:683
-msgid " day(s)"
+msgid "day(s)"
 msgstr "jour(s)"
 
 #: ajax_forms.php:719
@@ -1144,6 +1144,9 @@ msgid ""
 msgstr ""
 "La connexion ne fonctionne pas. Vérifiez les fichiers .htaccess et la valeur "
 "de remoteAuthVariableName indiquée dans le fichier /admin/configuration.ini"
+
+#~ msgid " day(s)"
+#~ msgstr "jour(s)"
 
 #~ msgid "Hello, "
 #~ msgstr "Bonjour, "
