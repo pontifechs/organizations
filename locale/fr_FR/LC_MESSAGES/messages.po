@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-05-18 09:32-0600\n"
-"PO-Revision-Date: 2016-05-18 09:33-0600\n"
+"PO-Revision-Date: 2016-06-06 14:07-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -38,7 +38,7 @@ msgstr "Aucune correspondance !"
 
 #: js/common.js:71
 msgid "Selected: "
-msgstr "Sélectionné :  "
+msgstr "Sélectionné:  "
 
 #: js/forms/aliasSubmitForm.js:43 js/forms/contactSubmitForm.js:125
 #: js/forms/organizationSubmitForm.js:109
@@ -323,7 +323,7 @@ msgstr ""
 
 #: admin/classes/common/DBService.php:39
 msgid "There was a problem with the database: "
-msgstr "Problème avec la base de données :  "
+msgstr "Problème avec la base de données:  "
 
 #: admin/classes/common/Object.php:63
 msgid "Cannot set value for undefined key ("
@@ -343,29 +343,29 @@ msgstr "Ajouter une nouvelle organisation"
 
 #: ajax_forms.php:72 ajax_forms.php:322
 msgid "Name:"
-msgstr "Nom :"
+msgstr "Nom:"
 
 #: ajax_forms.php:78 ajax_forms.php:92
 msgid "Parent:"
-msgstr "Parent :"
+msgstr "Parent:"
 
 #: ajax_forms.php:101 ajax_htmldata.php:226 summary.php:161
 msgid "Company URL:"
-msgstr "URL de la société :"
+msgstr "URL de la société:"
 
 #: ajax_forms.php:107 ajax_forms.php:379 ajax_htmldata.php:234 summary.php:169
 msgid "Role(s):"
-msgstr "Rôle(s) :"
+msgstr "Rôle(s):"
 
 #: ajax_forms.php:139 ajax_htmldata.php:242 summary.php:177
 msgid "Account Details:"
-msgstr "Détails du compte :"
+msgstr "Détails du compte:"
 
 #: ajax_forms.php:144 ajax_forms.php:416 ajax_forms.php:519 ajax_forms.php:855
 #: ajax_htmldata.php:250 ajax_htmldata.php:487 ajax_htmldata.php:609
 #: summary.php:185 summary.php:393 summary.php:497
 msgid "Notes:"
-msgstr "Remarques :"
+msgstr "Remarques:"
 
 #: ajax_forms.php:154 ajax_forms.php:231 ajax_forms.php:425 ajax_forms.php:529
 #: ajax_forms.php:688 ajax_forms.php:777 ajax_forms.php:864
@@ -399,31 +399,31 @@ msgstr "Ajouter un contact"
 
 #: ajax_forms.php:329 ajax_htmldata.php:439 summary.php:345
 msgid "Title:"
-msgstr "Titre :"
+msgstr "Titre:"
 
 #: ajax_forms.php:336 ajax_htmldata.php:455 summary.php:361
 msgid "Phone:"
-msgstr "Numéro de téléphone :"
+msgstr "Numéro de téléphone:"
 
 #: ajax_forms.php:343 ajax_htmldata.php:463 summary.php:369
 msgid "Alt Phone:"
-msgstr "Autre numéro de téléphone :"
+msgstr "Autre numéro de téléphone:"
 
 #: ajax_forms.php:350 ajax_htmldata.php:471 summary.php:377
 msgid "Fax:"
-msgstr "Numéro de fax :"
+msgstr "Numéro de fax:"
 
 #: ajax_forms.php:357 ajax_htmldata.php:479 summary.php:385
 msgid "Email:"
-msgstr "Adresse email :"
+msgstr "Adresse email:"
 
 #: ajax_forms.php:364
 msgid "Archived:"
-msgstr "Archivé :"
+msgstr "Archivé:"
 
 #: ajax_forms.php:372 ajax_htmldata.php:447 summary.php:353
 msgid "Address:"
-msgstr "Adresse :"
+msgstr "Adresse:"
 
 #: ajax_forms.php:468
 msgid "Update Login"
@@ -435,23 +435,23 @@ msgstr "Ajouter une connexion"
 
 #: ajax_forms.php:474
 msgid "Login Type:"
-msgstr "Type de connexion :"
+msgstr "Type de connexion:"
 
 #: ajax_forms.php:491
 msgid "URL:"
-msgstr "URL :"
+msgstr "URL:"
 
 #: ajax_forms.php:498
 msgid "Local Account Email:"
-msgstr "Adresse email du compte local :"
+msgstr "Adresse email du compte local:"
 
 #: ajax_forms.php:505
 msgid "Username:"
-msgstr "Nom d'utilisateur :"
+msgstr "Nom d'utilisateur:"
 
 #: ajax_forms.php:512 ajax_htmldata.php:593 summary.php:481
 msgid "Password:"
-msgstr "Mot de passe :"
+msgstr "Mot de passe:"
 
 #: ajax_forms.php:591
 msgid "Report New Problem"
@@ -543,7 +543,7 @@ msgstr "Lien pour ouvrir l'incident:"
 
 #: ajax_forms.php:768
 msgid "Note:"
-msgstr "Remarque :"
+msgstr "Remarque:"
 
 #: ajax_forms.php:816
 msgid "Update Issue"
@@ -555,15 +555,15 @@ msgstr "Ajouter un incident"
 
 #: ajax_forms.php:822
 msgid "Type:"
-msgstr "Type :"
+msgstr "Type:"
 
 #: ajax_forms.php:840
 msgid "Start date:"
-msgstr "Date de début :"
+msgstr "Date de début:"
 
 #: ajax_forms.php:847
 msgid "End date:"
-msgstr "Date de fin :"
+msgstr "Date de fin:"
 
 #: ajax_forms.php:905 ajax_htmldata.php:188 ajax_htmldata.php:332
 #: ajax_htmldata.php:420 ajax_htmldata.php:555 ajax_htmldata.php:788
@@ -632,7 +632,7 @@ msgstr "supprimer la ressource"
 
 #: ajax_htmldata.php:194 summary.php:129
 msgid "Parent Organization:"
-msgstr "Organisation principale :"
+msgstr "Organisation principale:"
 
 #: ajax_htmldata.php:199 summary.php:134 summary.php:150
 msgid "view organization"
@@ -644,11 +644,11 @@ msgstr "Afficher"
 
 #: ajax_htmldata.php:210 summary.php:145
 msgid "Child Organizations:"
-msgstr "Organisations subsidiaires :"
+msgstr "Organisations subsidiaires:"
 
 #: ajax_htmldata.php:261
 msgid "Created:"
-msgstr "Créé le :"
+msgstr "Créé le:"
 
 #: ajax_htmldata.php:266 ajax_htmldata.php:280 summary.php:205 summary.php:221
 msgid " by "
@@ -656,7 +656,7 @@ msgstr " par "
 
 #: ajax_htmldata.php:280
 msgid "Last Update:"
-msgstr "Dernière mise à jour le :"
+msgstr "Dernière mise à jour le:"
 
 #: ajax_htmldata.php:322 ajax_htmldata.php:960
 msgid "Alias"
@@ -680,7 +680,7 @@ msgstr "Ajouter un alias"
 
 #: ajax_htmldata.php:378 summary.php:283
 msgid "The following are archived contacts:"
-msgstr "Les contacts suivants sont archivés :"
+msgstr "Les contacts suivants sont archivés:"
 
 #: ajax_htmldata.php:420
 msgid "edit contact"
@@ -692,11 +692,11 @@ msgstr "Supprimer le contact"
 
 #: ajax_htmldata.php:431 summary.php:337
 msgid "No longer valid:"
-msgstr "N'est plus valide :"
+msgstr "N'est plus valide:"
 
 #: ajax_htmldata.php:495 ajax_htmldata.php:601 summary.php:401 summary.php:489
 msgid "Last Updated:"
-msgstr "Dernière mise à jour :"
+msgstr "Dernière mise à jour:"
 
 #: ajax_htmldata.php:508 summary.php:412
 msgid "No unarchived contacts"
@@ -724,7 +724,7 @@ msgstr "Supprimer cette connexion externe"
 
 #: ajax_htmldata.php:565 summary.php:453
 msgid "Login URL:"
-msgstr "URL de connexion :"
+msgstr "URL de connexion:"
 
 #: ajax_htmldata.php:570 summary.php:458
 msgid "Visit Login URL"
@@ -732,11 +732,11 @@ msgstr "Aller à l'URL de connexion"
 
 #: ajax_htmldata.php:577 summary.php:465
 msgid "Local email on account:"
-msgstr "Adresse email du compte :"
+msgstr "Adresse email du compte:"
 
 #: ajax_htmldata.php:585 summary.php:473
 msgid "User Name:"
-msgstr "Nom d'utilisateur :"
+msgstr "Nom d'utilisateur:"
 
 #: ajax_htmldata.php:622 summary.php:507
 msgid "No external logins added"
@@ -812,11 +812,11 @@ msgstr " à "
 
 #: ajax_htmldata.php:778
 msgid "start: "
-msgstr "Début :  "
+msgstr "Début:  "
 
 #: ajax_htmldata.php:780
 msgid "end: "
-msgstr "Fin :  "
+msgstr "Fin:  "
 
 #: ajax_htmldata.php:788
 msgid "edit issue"
@@ -987,7 +987,7 @@ msgstr "Imprimer"
 
 #: orgDetail.php:91
 msgid " of:"
-msgstr " de :"
+msgstr " de:"
 
 #: orgDetail.php:97
 msgid "(archived)"
@@ -1049,11 +1049,11 @@ msgstr ""
 
 #: summary.php:202
 msgid "Created: "
-msgstr "Créé le :  "
+msgstr "Créé le:  "
 
 #: summary.php:221
 msgid "Last Update: "
-msgstr "Dernière mise à jour le :  "
+msgstr "Dernière mise à jour le:  "
 
 #: summary.php:438
 msgid "External Logins"
