@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-18 09:32-0600\n"
-"PO-Revision-Date: 2016-06-06 14:07-0600\n"
+"POT-Creation-Date: 2016-06-13 12:54-0600\n"
+"PO-Revision-Date: 2016-06-13 12:55-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -469,7 +469,7 @@ msgstr "Organisation:"
 msgid "Contact:"
 msgstr "Contact:"
 
-#: ajax_forms.php:620 orgDetail.php:205
+#: ajax_forms.php:620 orgDetail.php:206
 msgid "add contact"
 msgstr "Ajouter un contact"
 
@@ -982,60 +982,64 @@ msgid "Organization Search"
 msgstr "Rechercher une organisation"
 
 #: orgDetail.php:80
+msgid "Helpful Links"
+msgstr "Liens utiles"
+
+#: orgDetail.php:81
 msgid "Print View"
 msgstr "Imprimer"
 
-#: orgDetail.php:91
+#: orgDetail.php:92
 msgid " of:"
 msgstr " de:"
 
-#: orgDetail.php:97
+#: orgDetail.php:98
 msgid "(archived)"
 msgstr "(archivé)"
 
-#: orgDetail.php:118 orgDetail.php:149 orgDetail.php:186 orgDetail.php:223
-#: orgDetail.php:276 orgDetail.php:302
+#: orgDetail.php:119 orgDetail.php:150 orgDetail.php:187 orgDetail.php:224
+#: orgDetail.php:277 orgDetail.php:303
 msgid "Organization"
 msgstr "Organisation"
 
-#: orgDetail.php:119 orgDetail.php:150 orgDetail.php:187 orgDetail.php:224
-#: orgDetail.php:277 orgDetail.php:303 summary.php:248
+#: orgDetail.php:120 orgDetail.php:151 orgDetail.php:188 orgDetail.php:225
+#: orgDetail.php:278 orgDetail.php:304 summary.php:248
 msgid "Aliases"
 msgstr "Alias"
 
-#: orgDetail.php:120 orgDetail.php:151 orgDetail.php:188 orgDetail.php:225
-#: orgDetail.php:278 orgDetail.php:304 summary.php:314
+#: orgDetail.php:121 orgDetail.php:152 orgDetail.php:189 orgDetail.php:226
+#: orgDetail.php:279 orgDetail.php:305 summary.php:314
 msgid "Contacts"
 msgstr "Contacts"
 
-#: orgDetail.php:121 orgDetail.php:152 orgDetail.php:189 orgDetail.php:226
-#: orgDetail.php:279 orgDetail.php:305
+#: orgDetail.php:122 orgDetail.php:153 orgDetail.php:190 orgDetail.php:227
+#: orgDetail.php:280 orgDetail.php:306
 msgid "Accounts"
 msgstr "Comptes"
 
-#: orgDetail.php:124 orgDetail.php:126 orgDetail.php:155 orgDetail.php:157
-#: orgDetail.php:192 orgDetail.php:194 orgDetail.php:229 orgDetail.php:231
-#: orgDetail.php:258 orgDetail.php:280 orgDetail.php:308 orgDetail.php:310
+#: orgDetail.php:125 orgDetail.php:127 orgDetail.php:156 orgDetail.php:158
+#: orgDetail.php:193 orgDetail.php:195 orgDetail.php:230 orgDetail.php:232
+#: orgDetail.php:259 orgDetail.php:281 orgDetail.php:309 orgDetail.php:311
 #: summary.php:540
 msgid "Issues"
 msgstr "Incidents"
 
-#: orgDetail.php:129 orgDetail.php:160 orgDetail.php:197 orgDetail.php:234
-#: orgDetail.php:281 orgDetail.php:313 summary.php:590
+#: orgDetail.php:130 orgDetail.php:161 orgDetail.php:198 orgDetail.php:235
+#: orgDetail.php:282 orgDetail.php:314 summary.php:590
 msgid "Licenses"
 msgstr "Licences"
 
-#: orgDetail.php:129 orgDetail.php:160 orgDetail.php:197 orgDetail.php:234
-#: orgDetail.php:281 orgDetail.php:313
+#: orgDetail.php:130 orgDetail.php:161 orgDetail.php:198 orgDetail.php:235
+#: orgDetail.php:282 orgDetail.php:314
 msgid " record"
 msgstr " fiche"
 
-#: orgDetail.php:129 orgDetail.php:160 orgDetail.php:197 orgDetail.php:234
-#: orgDetail.php:281 orgDetail.php:313
+#: orgDetail.php:130 orgDetail.php:161 orgDetail.php:198 orgDetail.php:235
+#: orgDetail.php:282 orgDetail.php:314
 msgid " records"
 msgstr " fiches"
 
-#: orgDetail.php:336 summary.php:643
+#: orgDetail.php:337 summary.php:643
 msgid "invalid organization"
 msgstr "Organisation non-valide"
 
@@ -1166,9 +1170,6 @@ msgstr ""
 
 #~ msgid " User"
 #~ msgstr " Utilisateur"
-
-#~ msgid "Helpful Links"
-#~ msgstr "Liens utiles"
 
 #~ msgid "view resource"
 #~ msgstr "Afficher la ressource"
