@@ -77,6 +77,7 @@ if ($organization->name){
         <?php
         if ($config->settings->resourcesModule == 'Y'){ ?>
         <div id="print-view">
+        	<div id="side-menu-title"><?php echo _("Helpful Links"); ?></div>
             <div class='rightPanelLink'><a href='summary.php?organizationID=<?php echo $organizationID; ?>' target='_blank' class='helpfulLink'><?php echo _("Print View");?></a></div>
 
             <?php
