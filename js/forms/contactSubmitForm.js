@@ -90,7 +90,7 @@ function submitContact(){
 				if (!parseInt(html)){
 					$("#span_errors").html(html);
 					$("#submitContactForm").removeAttr("disabled");
-				}else{
+				} else {
 					window.parent.tb_remove();
 					window.parent.updateContacts();
 					window.parent.updateArchivedContacts();
